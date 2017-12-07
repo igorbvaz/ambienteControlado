@@ -37,3 +37,4 @@
 .\io_toggle\main.o: ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h
 .\io_toggle\main.o: C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h
 .\io_toggle\main.o: C:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+.\io_toggle\main.o: C:\Keil\ARM\ARMCC\bin\..\include\string.h
