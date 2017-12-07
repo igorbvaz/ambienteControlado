@@ -13,9 +13,9 @@ bool I1,I2,LED1,LED2;
 int valor_ADC;
 extern void ADC_RegularChannelConfig(ADC_TypeDef* ADCx, uint8_t ADC_Channel, uint8_t Rank, uint8_t ADC_SampleTime);
 
-int adc_convert();
-void configureGPIO();
-void configureADC();
+int adc_convert(void);
+void configureGPIO(void);
+void configureADC(void);
 char decodifica_7seg(int);
 
 
