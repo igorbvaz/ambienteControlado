@@ -4,7 +4,6 @@
 ".\io_toggle\led.o"
 ".\io_toggle\stm32f4_discovery.o"
 ".\io_toggle\stm32f4xx_adc.o"
-".\io_toggle\lcd.o"
 ".\io_toggle\stm32f4xx_rcc.o"
 ".\io_toggle\misc.o"
 ".\io_toggle\stm32f4xx_gpio.o"

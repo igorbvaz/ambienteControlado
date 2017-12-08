@@ -22,11 +22,10 @@ char decodifica_7seg(int);
 /*MAIN*/	
 int main(void)
 {
-//	bool apertado = 0;
+	int vetor[10] = {0x7E, 0x48, 0x3D, 0x6D, 0x4B, 0x67, 0x77, 0x4C, 0x7F, 0x6F};
+	bool apertado = 0;
 	int adc_value = 0;
 	int temperatura = 0;
-	char exibir[26];
-  bool asd = false;
   /* Configure PC1 in output pushpull mode */
   configureGPIO();
 	
@@ -40,35 +39,30 @@ int main(void)
 	GPIO_Init(GPIOB, &GPIO_InitStructure);
 	configureADC();
 
-	GPIO_SetBits(GPIOA, decodifica_7seg(4));
+	
 	
 	/* Initiate LED and BUTTON */
   STM_EVAL_PBInit(BUTTON_USER, BUTTON_MODE_GPIO);   /* Push Button*/
-//  STM_EVAL_LEDInit(LED3);
+  STM_EVAL_LEDInit(LED3);
 	STM_EVAL_LEDInit(LED4);
-//	STM_EVAL_LEDInit(LED5);
-	
-//  push = false;
-//  STM_EVAL_LEDOff(LED3);
-//	STM_EVAL_LEDOff(LED4);
-//	STM_EVAL_LEDOff(LED5);
+
   while (1)       /*Infinite loop*/
   {	
-//		if (STM_EVAL_PBGetState(BUTTON_USER) == Bit_SET && !apertado ) {
-//			if (!push) {
-//			GPIO_SetBits(GPIOC, GPIO_Pin_1);
-//			STM_EVAL_LEDOn(LED3);
-//			push = !push;
-//			} else {
-//			
-//			GPIO_ResetBits(GPIOC, GPIO_Pin_1);
-//			STM_EVAL_LEDOff(LED3);
-//			push = !push;
-//			}
-//			apertado = true;
-//		}
-//		if (STM_EVAL_PBGetState(BUTTON_USER) == Bit_RESET)
-//			apertado = false;
+		if (STM_EVAL_PBGetState(BUTTON_USER) == Bit_SET && !apertado ) {
+			if (!push) {
+			GPIO_SetBits(GPIOC, GPIO_Pin_1);
+			STM_EVAL_LEDOn(LED3);
+			push = !push;
+			} else {
+			
+			GPIO_ResetBits(GPIOC, GPIO_Pin_1);
+			STM_EVAL_LEDOff(LED3);
+			push = !push;
+			}
+			apertado = true;
+		}
+		if (STM_EVAL_PBGetState(BUTTON_USER) == Bit_RESET)
+			apertado = false;
 	/*
 		1000 => 0.714 V
 		2000 => 1.445 V
@@ -78,32 +72,19 @@ int main(void)
 		T = (V - 500)/10
 	*/
 	
-	ADC_SoftwareStartConv(ADC1);//Start the conversion
-  while(!ADC_GetFlagStatus(ADC1, ADC_FLAG_EOC));//Processing the conversion
-  adc_value = ADC_GetConversionValue(ADC1);
-	temperatura = (int) (7.0 + 0.713*(adc_value) - 500)/10;
-	//temperatura = (int) (7.0 + 0.713*(adc_convert()) - 500)/10;
+//	ADC_SoftwareStartConv(ADC1);//Start the conversion
+//  while(!ADC_GetFlagStatus(ADC1, ADC_FLAG_EOC));//Processing the conversion
+//  adc_value = ADC_GetConversionValue(ADC1);
+//	temperatura = (int) (7.0 + 0.713*(adc_value) - 500)/10;
+	//temperatura = (7.0 + 0.713*(adc_convert()) - 500)/10;
 	
 	
-	if (!asd) {
-		
-		STM_EVAL_LEDOn(LED4);
-		
-	} else {
-		
-		STM_EVAL_LEDOff(LED4);
-		
-	}
-	asd = !asd;
-	
-	sprintf(exibir, "%d", temperatura);
 	
 	
 		
 /************************/		
 		
-		//STM_EVAL_PBGetState(BUTTON_USER);
-		Delay(168e4); 
+		Delay(168e3); 
 	}  /*end of main */
 }
 /**
@@ -129,7 +110,7 @@ void configureGPIO() {
   GPIO_Init(GPIOC, &GPIO_InitStructure);
 	
 	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE); /* GPIOC Periph clock enable */
-	GPIO_InitStructure.GPIO_Pin = 0x3FFF; //Pinos PA0 a PA13
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0|GPIO_Pin_1|GPIO_Pin_2|GPIO_Pin_3|GPIO_Pin_4; //Pinos PA0 a PA13
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
   GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
   GPIO_InitStructure.GPIO_Speed = GPIO_Speed_100MHz;
@@ -163,9 +144,5 @@ int adc_convert(){
  return ADC_GetConversionValue(ADC1); //Return the converted data
 }
 
-char decodifica_7seg(int valor) {
-	
-	int vetor[10] = {0x7E, 0x48, 0x3D, 0x6D, 0x4B, 0x67, 0x77, 0x4C, 0x7F, 0x6F};
-	return vetor[valor];
 
-}
+

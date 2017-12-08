@@ -1,0 +1,5 @@
+-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\ -I..\..\..\..\Libraries\CMSIS\Include -I..\..\..\..\Libraries\CMSIS\ST\STM32F4xx\Include -I..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I..\..\..\..\Utilities\STM32F4-Discovery
+-I C:\Keil\ARM\RV31\INC
+-I C:\Keil\ARM\CMSIS\Include
+-I C:\Keil\ARM\Inc\ST\STM32F4xx
+-DHSE_VALUE="8000000" -DUSE_STDPERIPH_DRIVER -DSTM32F4XX -o .\io_toggle\lcd.o --omf_browse .\io_toggle\lcd.crf --depend .\io_toggle\lcd.d "..\lcd.c"
