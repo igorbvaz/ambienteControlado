@@ -1,0 +1,29 @@
+--cpu Cortex-M4.fp
+"ambientecontrolado\stm32f4xx_hal_flash_ex.o"
+"ambientecontrolado\stm32f4xx_hal.o"
+"ambientecontrolado\stm32f4xx_hal_tim.o"
+"ambientecontrolado\stm32f4xx_hal_gpio.o"
+"ambientecontrolado\stm32f4xx_hal_dma_ex.o"
+"ambientecontrolado\stm32f4xx_hal_pwr.o"
+"ambientecontrolado\stm32f4xx_hal_rcc_ex.o"
+"ambientecontrolado\stm32f4xx_hal_flash_ramfunc.o"
+"ambientecontrolado\stm32f4xx_hal_rcc.o"
+"ambientecontrolado\stm32f4xx_hal_flash.o"
+"ambientecontrolado\stm32f4xx_hal_cortex.o"
+"ambientecontrolado\stm32f4xx_hal_tim_ex.o"
+"ambientecontrolado\stm32f4xx_hal_dma.o"
+"ambientecontrolado\stm32f4xx_hal_pwr_ex.o"
+"ambientecontrolado\stm32f4xx_hal_adc.o"
+"ambientecontrolado\stm32f4xx_hal_adc_ex.o"
+"ambientecontrolado\startup_stm32f407xx.o"
+"ambientecontrolado\system_stm32f4xx.o"
+"ambientecontrolado\stm32f4xx_hal_msp.o"
+"ambientecontrolado\main.o"
+"ambientecontrolado\stm32f4xx_it.o"
+"ambientecontrolado\gpio.o"
+"ambientecontrolado\adc.o"
+--library_type=microlib --strict --scatter "ambienteControlado\ambienteControlado.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ambienteControlado.map" -o ambienteControlado\ambienteControlado.axf
