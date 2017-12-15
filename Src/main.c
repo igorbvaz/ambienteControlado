@@ -133,14 +133,15 @@ int main(void)
 			temperatura = 7 + 0.713*temperatura; //int 12 bits para tensão
 			temperatura = temperatura/10;
 			referencia = (7 + 0.713*referencia)/10;
-			writeTo7seg(count, count);
+			writeTo7seg(count, (count < 2) ? temperatura/10 : referencia / 10);
 			count++;
-			HAL_Delay(300);
+			writeTo7seg(count, (count < 2) ? temperatura % 10 : referencia % 10);
+			count++;
 			if (count == 4) count = 0;
 		}
 		else { //Desligando
 			HAL_GPIO_WritePin(LD5_GPIO_Port, LD5_Pin, GPIO_PIN_RESET);
-			//HAL_GPIO_WritePin(GPIOE, GPIO_PIN_All & ~GPIO_PIN_15 & ~GPIO_PIN_14, GPIO_PIN_RESET);
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_All & ~GPIO_PIN_15 & ~GPIO_PIN_14, GPIO_PIN_RESET);
 			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_All & ~GPIO_PIN_15 & ~GPIO_PIN_14, GPIO_PIN_RESET);
 			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, GPIO_PIN_RESET);
 			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, GPIO_PIN_RESET);
@@ -215,11 +216,32 @@ void SystemClock_Config(void)
 /* USER CODE BEGIN 4 */
 void writeTo7seg(int num, int count) {
 	uint16_t vetor[10] = {0x7E, 0x48, 0x3D, 0x6D, 0x4B, 0x67, 0x77, 0x4C, 0x7F, 0x6F};
-	int qu, re;
-	qu = ((num / 10) < 10) ? num / 10 : 9 ;
-	re = num % 10;
-	HAL_GPIO_WritePin(GPIOE, vetor[re]<< 7, GPIO_PIN_SET);
-	HAL_GPIO_WritePin(GPIOE, (~vetor[re] & 0x7f) << 7, GPIO_PIN_RESET);
+	switch (count) {
+		case 0:
+			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, GPIO_PIN_RESET);
+			HAL_GPIO_WritePin(GPIOE, vetor[num]<< 7, GPIO_PIN_SET);
+			HAL_GPIO_WritePin(GPIOE, (~vetor[num] & 0x7f) << 7, GPIO_PIN_RESET);
+			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, GPIO_PIN_SET);
+			break;
+		case 1:
+			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_7, GPIO_PIN_RESET);
+			HAL_GPIO_WritePin(GPIOE, vetor[num]<< 7, GPIO_PIN_SET);
+			HAL_GPIO_WritePin(GPIOE, (~vetor[num] & 0x7f) << 7, GPIO_PIN_RESET);
+			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_7, GPIO_PIN_SET);
+			break;
+		case 2:
+			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_RESET);
+			HAL_GPIO_WritePin(GPIOE, vetor[num]<< 7, GPIO_PIN_SET);
+			HAL_GPIO_WritePin(GPIOE, (~vetor[num] & 0x7f) << 7, GPIO_PIN_RESET);
+			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET);
+			break;
+		case 3:
+			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
+			HAL_GPIO_WritePin(GPIOE, vetor[num]<< 7, GPIO_PIN_SET);
+			HAL_GPIO_WritePin(GPIOE, (~vetor[num] & 0x7f) << 7, GPIO_PIN_RESET);
+			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
+			break;
+	}
 //	HAL_GPIO_WritePin(GPIOx, vetor[qu] << 9, GPIO_PIN_SET);
 //	HAL_GPIO_WritePin(GPIOx, (~vetor[qu] << 9) & 0x3f00, GPIO_PIN_RESET);
 }

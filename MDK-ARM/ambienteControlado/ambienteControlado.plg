@@ -3,9 +3,7 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
-S:\fernandob.V2\Documents\ambienteControlado\MDK-ARM\ambienteControlado.uvproj
+S:\fernandob.V2\Documents\lab2\ambienteControlado\MDK-ARM\ambienteControlado.uvproj
 Project File Date:  12/14/2017
 
 <h2>Output:</h2>
-Rebuild target 'ambienteControlado'
-compiling stm32f4xx_hal_flash_ex.c...
