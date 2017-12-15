@@ -70,7 +70,7 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-	int temperatura, referencia, count;
+	int temperatura, temperaturaAn, referencia, count;
 	bool apertado, controleAtivo;
 	apertado = false;
 	controleAtivo = false;
@@ -108,15 +108,14 @@ int main(void)
 	count = 0;
   while (1)
   {
+		//HAL_GPIO_WritePin(GPIOE, GPIO_PIN_All, GPIO_PIN_SET);
 		if (!apertado && HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin) == GPIO_PIN_SET) { //Se botão apertado
 			HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_1); // porta para ativar lâmpada
 			HAL_GPIO_TogglePin(LD6_GPIO_Port, LD6_Pin); //led para indicar ligado
 			controleAtivo = !controleAtivo; //liga e desliga o sistema de controle e exibição
 			apertado = true;
 		}
-		if (HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin) == GPIO_PIN_RESET) {
-			apertado = false;
-		}
+		if (HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin) == GPIO_PIN_RESET) apertado = false;
 		
 		
 		/*
@@ -133,15 +132,15 @@ int main(void)
 			if (HAL_ADC_PollForConversion(&hadc2, 300) == HAL_OK) referencia = HAL_ADC_GetValue(&hadc2);
 			temperatura = 7 + 0.713*temperatura; //int 12 bits para tensão
 			temperatura = temperatura/10;
-			temperatura = 25;
 			referencia = (7 + 0.713*referencia)/10;
-			writeTo7seg((count>1) ? temperatura: referencia, count);
+			writeTo7seg(count, count);
 			count++;
+			HAL_Delay(300);
 			if (count == 4) count = 0;
 		}
 		else { //Desligando
 			HAL_GPIO_WritePin(LD5_GPIO_Port, LD5_Pin, GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_All & ~GPIO_PIN_15 & ~GPIO_PIN_14, GPIO_PIN_RESET);
+			//HAL_GPIO_WritePin(GPIOE, GPIO_PIN_All & ~GPIO_PIN_15 & ~GPIO_PIN_14, GPIO_PIN_RESET);
 			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_All & ~GPIO_PIN_15 & ~GPIO_PIN_14, GPIO_PIN_RESET);
 			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, GPIO_PIN_RESET);
 			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, GPIO_PIN_RESET);
@@ -219,38 +218,10 @@ void writeTo7seg(int num, int count) {
 	int qu, re;
 	qu = ((num / 10) < 10) ? num / 10 : 9 ;
 	re = num % 10;
-	switch (count) {
-		case 0:
-			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_7, GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(GPIOE, vetor[qu], GPIO_PIN_SET);
-			HAL_GPIO_WritePin(GPIOE, ~vetor[qu] & 0x7f, GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_7, GPIO_PIN_SET);
-			break;
-		case 1:
-			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_8, GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(GPIOE, vetor[qu], GPIO_PIN_SET);
-			HAL_GPIO_WritePin(GPIOE, ~vetor[re] & 0x7f, GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_8, GPIO_PIN_SET);
-			break;
-		case 2:
-			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_7, GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(GPIOE, vetor[qu], GPIO_PIN_SET);
-			HAL_GPIO_WritePin(GPIOE, ~vetor[qu] & 0x7f, GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_7, GPIO_PIN_SET);
-			break;
-		case 3:
-			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_8, GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(GPIOE, vetor[re], GPIO_PIN_SET);
-			HAL_GPIO_WritePin(GPIOE, ~vetor[re] & 0x7f, GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_8, GPIO_PIN_SET);
-		break;
-	}
-//	HAL_GPIO_WritePin(GPIOx, GPIO_PIN_8, GPIO_PIN_SET);
-//	HAL_GPIO_WritePin(GPIOE, vetor[re], GPIO_PIN_SET);
-//	HAL_GPIO_WritePin(GPIOE, ~vetor[re] & 0x7f, GPIO_PIN_RESET);
-//	HAL_GPIO_WritePin(GPIOx, GPIO_PIN_8, GPIO_PIN_RESET);
-//	HAL_GPIO_WritePin(GPIOx, vetor[qu] << 7, GPIO_PIN_SET);
-//	HAL_GPIO_WritePin(GPIOx, (~vetor[qu] << 7) & 0x3f00, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(GPIOE, vetor[re]<< 7, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(GPIOE, (~vetor[re] & 0x7f) << 7, GPIO_PIN_RESET);
+//	HAL_GPIO_WritePin(GPIOx, vetor[qu] << 9, GPIO_PIN_SET);
+//	HAL_GPIO_WritePin(GPIOx, (~vetor[qu] << 9) & 0x3f00, GPIO_PIN_RESET);
 }
 
 //void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* AdcHandle) {
