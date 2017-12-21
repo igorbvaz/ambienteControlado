@@ -3,7 +3,38 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
-S:\fernandob.V2\Documents\lab2\ambienteControlado\MDK-ARM\ambienteControlado.uvproj
+C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\MDK-ARM\ambienteControlado.uvproj
 Project File Date:  12/14/2017
 
 <h2>Output:</h2>
+Build target 'ambienteControlado'
+compiling main.c...
+../Src/main.c(73): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
+../Src/main.c(73): warning: C4017W: referencia may be used before being set
+compiling gpio.c...
+compiling adc.c...
+linking...
+Program Size: Code=8604 RO-data=460 RW-data=8 ZI-data=1168  
+"ambienteControlado\ambienteControlado.axf" - 0 Errors, 2 Warning(s).
+Load "ambienteControlado\\ambienteControlado.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'ambienteControlado'
+compiling main.c...
+../Src/main.c(73): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
+../Src/main.c(73): warning: C4017W: referencia may be used before being set
+linking...
+Program Size: Code=8588 RO-data=460 RW-data=8 ZI-data=1168  
+"ambienteControlado\ambienteControlado.axf" - 0 Errors, 2 Warning(s).
+Load "ambienteControlado\\ambienteControlado.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'ambienteControlado'
+compiling main.c...
+../Src/main.c(73): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
+../Src/main.c(73): warning: C4017W: referencia may be used before being set
+linking...
+Program Size: Code=8524 RO-data=460 RW-data=8 ZI-data=1168  
+"ambienteControlado\ambienteControlado.axf" - 0 Errors, 2 Warning(s).
