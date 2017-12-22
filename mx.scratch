@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
-<ProjectName>D:\ferna\Projetos\uv4\ambienteControlado\\ambienteControlado</ProjectName>
+<ProjectName>C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\\ambienteControlado</ProjectName>
 <CMSIS>..\Drivers\CMSIS</CMSIS>
 <HAL_Driver>C:\Users\ferna\STM32Cube\Repository\STM32Cube_FW_F4_V1.18.0\Drivers\CMSIS</HAL_Driver>
 
@@ -147,6 +147,10 @@
 
                                 <file>
                                  <name>..\Src\adc.c</name>
+                                </file>
+
+                                <file>
+                                 <name>..\Src\tim.c</name>
                                 </file>
 
                                 <file>

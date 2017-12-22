@@ -22,6 +22,7 @@
 "ambientecontrolado\stm32f4xx_it.o"
 "ambientecontrolado\gpio.o"
 "ambientecontrolado\adc.o"
+"ambientecontrolado\tim.o"
 --library_type=microlib --strict --scatter "ambienteControlado\ambienteControlado.sct"
 
 --diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols

@@ -40,10 +40,13 @@
 #include "main.h"
 #include "stm32f4xx_hal.h"
 #include "adc.h"
+#include "tim.h"
 #include "gpio.h"
 
 /* USER CODE BEGIN Includes */
 #include <stdbool.h>
+#include "stm32f4xx_hal_tim.h"
+#include "stm32f4xx_hal_tim_ex.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -59,11 +62,11 @@ void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
 /* Private function prototypes -----------------------------------------------*/
 void writeTo7seg(int, int);
+void setPWM(TIM_HandleTypeDef, uint32_t, uint16_t, uint16_t);
 
 /* USER CODE END PFP */
 
 /* USER CODE BEGIN 0 */
-
 /* USER CODE END 0 */
 
 int main(void)
@@ -96,11 +99,13 @@ int main(void)
   MX_GPIO_Init();
   MX_ADC1_Init();
   MX_ADC2_Init();
+  MX_TIM4_Init();
 
   /* USER CODE BEGIN 2 */
 	HAL_ADC_Start(&hadc1);
 	HAL_ADC_Start(&hadc2);
-	
+	HAL_TIM_Base_Start(&htim4); 
+	HAL_TIM_PWM_Start(&htim4,TIM_CHANNEL_3);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -132,13 +137,14 @@ int main(void)
 			if (HAL_ADC_PollForConversion(&hadc2, 300) == HAL_OK) referencia = HAL_ADC_GetValue(&hadc2);
 			temperatura = 7 + 0.713*temperatura; //int 12 bits para tensão
 			temperatura = temperatura/10;
+			temperatura = 25;
 			referencia = (7 + 0.713*referencia)/10;
 			writeTo7seg((count > 1) ? temperatura : referencia, count);
 			count++;
 			if (count == 4) count = 0;
+			setPWM(htim4, TIM_CHANNEL_3, 4095, count << 9); 
 		}
 		else { //Desligando
-			HAL_GPIO_WritePin(LD5_GPIO_Port, LD5_Pin, GPIO_PIN_RESET);
 			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_All & ~GPIO_PIN_15 & ~GPIO_PIN_14, GPIO_PIN_RESET);
 			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_All & ~GPIO_PIN_15 & ~GPIO_PIN_14, GPIO_PIN_RESET);
 			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, GPIO_PIN_RESET);
@@ -150,6 +156,8 @@ int main(void)
 
   /* USER CODE BEGIN 3 */
 	//não se deve usar delay por causa do poll do adc (aumenta muito o atraso)
+		HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_13);
+		HAL_Delay(1000);
   }
   /* USER CODE END 3 */
 
@@ -219,24 +227,32 @@ void writeTo7seg(int num, int count) {
 	qu = num / 10;
 	switch (count) {
 		case 0:
+			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_All, GPIO_PIN_SET);
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_All, GPIO_PIN_RESET);
 			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
 			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(GPIOE, vetor[qu]<< 7, GPIO_PIN_SET);
+			HAL_GPIO_WritePin(GPIOE, vetor[qu] << 7, GPIO_PIN_SET);
 			HAL_GPIO_WritePin(GPIOE, (~vetor[qu] & 0x7f) << 7, GPIO_PIN_RESET);
 			break;
 		case 1:
+			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_All, GPIO_PIN_SET);
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_All, GPIO_PIN_RESET);
 			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, GPIO_PIN_SET);
 			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_7, GPIO_PIN_RESET);
 			HAL_GPIO_WritePin(GPIOE, vetor[re]<< 7, GPIO_PIN_SET);
 			HAL_GPIO_WritePin(GPIOE, (~vetor[re] & 0x7f) << 7, GPIO_PIN_RESET);
 			break;
 		case 2:
+			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_All, GPIO_PIN_SET);
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_All, GPIO_PIN_RESET);
 			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_7, GPIO_PIN_SET);
 			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_RESET);
 			HAL_GPIO_WritePin(GPIOE, vetor[qu]<< 7, GPIO_PIN_SET);
 			HAL_GPIO_WritePin(GPIOE, (~vetor[qu] & 0x7f) << 7, GPIO_PIN_RESET);
 			break;
 		case 3:
+			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_All, GPIO_PIN_SET);
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_All, GPIO_PIN_RESET);
 			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET);
 			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
 			HAL_GPIO_WritePin(GPIOE, vetor[re]<< 7, GPIO_PIN_SET);
@@ -247,13 +263,20 @@ void writeTo7seg(int num, int count) {
 //	HAL_GPIO_WritePin(GPIOx, (~vetor[qu] << 9) & 0x3f00, GPIO_PIN_RESET);
 }
 
-//void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* AdcHandle) {
-//	ADC_Value = HAL_ADC_GetValue(AdcHandle);
-//}
-
-//void ADC_IRQHandler() {
-//	HAL_ADC_IRQHandler(&hadc1);
-//}
+void setPWM(TIM_HandleTypeDef timer, uint32_t channel, uint16_t period,
+uint16_t pulse)
+{
+ HAL_TIM_PWM_Stop(&timer, channel); // stop generation of pwm
+ TIM_OC_InitTypeDef sConfigOC;
+ timer.Init.Period = period; // set the period duration
+ HAL_TIM_PWM_Init(&timer); // reinititialise with new period value
+ sConfigOC.OCMode = TIM_OCMODE_PWM1;
+ sConfigOC.Pulse = pulse; // set the pulse duration
+ sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
+ sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
+ HAL_TIM_PWM_ConfigChannel(&timer, &sConfigOC, channel);
+ HAL_TIM_PWM_Start(&timer, channel); // start pwm generation
+} 
 
 /* USER CODE END 4 */
 

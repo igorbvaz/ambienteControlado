@@ -24,21 +24,7 @@
 
   [..]  
   During and just after reset, the alternate functions and external interrupt  
-  lines are
-
-
-
-
-
-
-
-
-
-
-
-
-
-not active and the I/O ports are configured in input floating mode.
+  lines are not active and the I/O ports are configured in input floating mode.
   
   [..]   
   All GPIO pins have weak internal pull-up and pull-down resistors, which can be 
