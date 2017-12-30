@@ -54,6 +54,8 @@
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
 int ADC_Value;
+uint16_t vetorB[10] = {0xF90, 0x900, 0x788, 0xD88, 0x918, 0xC98, 0xE98, 0x980, 0xF98, 0xD98};
+uint16_t vetorC[10] = {0xAD8, 0x840, 0x2D4, 0xA54, 0x84C, 0xA1C, 0xA9C, 0x850, 0xADC, 0xA5C};
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -62,6 +64,7 @@ void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
 /* Private function prototypes -----------------------------------------------*/
 void writeTo7seg(int, int);
+void writeToDisplay(int);
 void setPWM(TIM_HandleTypeDef, uint32_t, uint16_t, uint16_t);
 
 /* USER CODE END PFP */
@@ -97,15 +100,15 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_ADC1_Init();
-  MX_ADC2_Init();
-  MX_TIM4_Init();
+//  MX_ADC1_Init();
+//  MX_ADC2_Init();
+//  MX_TIM4_Init();
 
   /* USER CODE BEGIN 2 */
-	HAL_ADC_Start(&hadc1);
-	HAL_ADC_Start(&hadc2);
-	HAL_TIM_Base_Start(&htim4); 
-	HAL_TIM_PWM_Start(&htim4,TIM_CHANNEL_3);
+//	HAL_ADC_Start(&hadc1);
+//	HAL_ADC_Start(&hadc2);
+//	HAL_TIM_Base_Start(&htim4); 
+//	HAL_TIM_PWM_Start(&htim4,TIM_CHANNEL_3);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -113,14 +116,15 @@ int main(void)
 	count = 0;
   while (1)
   {
-		HAL_GPIO_WritePin(GPIOE, GPIO_PIN_7, GPIO_PIN_SET);
-		if (!apertado && HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin) == GPIO_PIN_SET) { //Se botão apertado
-			HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_1); // porta para ativar lâmpada
-			HAL_GPIO_TogglePin(LD6_GPIO_Port, LD6_Pin); //led para indicar ligado
-			controleAtivo = !controleAtivo; //liga e desliga o sistema de controle e exibição
-			apertado = true;
-		}
-		if (HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin) == GPIO_PIN_RESET) apertado = false;
+		
+//		HAL_GPIO_WritePin(GPIOE, GPIO_PIN_7, GPIO_PIN_SET);
+//		if (!apertado && HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin) == GPIO_PIN_SET) { //Se botão apertado
+//			HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_1); // porta para ativar lâmpada
+//			HAL_GPIO_TogglePin(LD6_GPIO_Port, LD6_Pin); //led para indicar ligado
+//			controleAtivo = !controleAtivo; //liga e desliga o sistema de controle e exibição
+//			apertado = true;
+//		}
+//		if (HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin) == GPIO_PIN_RESET) apertado = false;
 		
 		
 		/*
@@ -132,25 +136,25 @@ int main(void)
 		T = V/10 (V em mV)
 	*/
 		
-		if (controleAtivo) { //sistema de controle e exibição
-			if (HAL_ADC_PollForConversion(&hadc1, 300) == HAL_OK) temperatura = HAL_ADC_GetValue(&hadc1);
-			if (HAL_ADC_PollForConversion(&hadc2, 300) == HAL_OK) referencia = HAL_ADC_GetValue(&hadc2);
-			temperatura = 7 + 0.713*temperatura; //int 12 bits para tensão
-			temperatura = temperatura/10;
-			temperatura = 25;
-			referencia = (7 + 0.713*referencia)/10;
-			writeTo7seg((count > 1) ? temperatura : referencia, count);
-			count++;
-			if (count == 4) count = 0;
-			setPWM(htim4, TIM_CHANNEL_3, 4095, count << 9); 
-		}
-		else { //Desligando
-			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_All & ~GPIO_PIN_15 & ~GPIO_PIN_14, GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_All & ~GPIO_PIN_15 & ~GPIO_PIN_14, GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, GPIO_PIN_RESET);
-			
-		}
+//		if (controleAtivo) { //sistema de controle e exibição
+//			if (HAL_ADC_PollForConversion(&hadc1, 300) == HAL_OK) temperatura = HAL_ADC_GetValue(&hadc1);
+//			if (HAL_ADC_PollForConversion(&hadc2, 300) == HAL_OK) referencia = HAL_ADC_GetValue(&hadc2);
+//			temperatura = 7 + 0.713*temperatura; //int 12 bits para tensão
+//			temperatura = temperatura/10;
+//			temperatura = 25;
+//			referencia = (7 + 0.713*referencia)/10;
+//			writeTo7seg((count > 1) ? temperatura : referencia, count);
+//			count++;
+//			if (count == 4) count = 0;
+//			setPWM(htim4, TIM_CHANNEL_3, 4095, count << 9); 
+//		}
+//		else { //Desligando
+//			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_All & ~GPIO_PIN_15 & ~GPIO_PIN_14, GPIO_PIN_RESET);
+//			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_All & ~GPIO_PIN_15 & ~GPIO_PIN_14, GPIO_PIN_RESET);
+//			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, GPIO_PIN_RESET);
+//			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, GPIO_PIN_RESET);
+//			
+//		}
 		
   /* USER CODE END WHILE */
 
@@ -158,6 +162,7 @@ int main(void)
 	//não se deve usar delay por causa do poll do adc (aumenta muito o atraso)
 		HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_13);
 		HAL_Delay(1000);
+		writeToDisplay(39);
   }
   /* USER CODE END 3 */
 
@@ -217,6 +222,23 @@ void SystemClock_Config(void)
 
   /* SysTick_IRQn interrupt configuration */
   HAL_NVIC_SetPriority(SysTick_IRQn, 0, 0);
+}
+
+void writeToDisplay(int number) {
+	
+	
+	
+	for (int i = 0; i < 100; i++) {
+		int dezena = i / 10;
+	int unidade = i % 10;
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_All, GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_All, GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(GPIOB, vetorB[dezena] << 4, GPIO_PIN_SET);
+	  HAL_GPIO_WritePin(GPIOC, vetorC[unidade] << 2, GPIO_PIN_SET);
+		HAL_Delay(200);
+		
+	}
+	
 }
 
 /* USER CODE BEGIN 4 */
