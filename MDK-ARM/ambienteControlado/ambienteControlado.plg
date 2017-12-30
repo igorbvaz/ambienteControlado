@@ -3,10 +3,42 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
-C:\Users\Igor\Desktop\projetoLab2\ambienteControlado\MDK-ARM\ambienteControlado.uvproj
-Project File Date:  12/29/2017
+C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\MDK-ARM\ambienteControlado.uvproj
+Project File Date:  12/30/2017
 
 <h2>Output:</h2>
+Build target 'ambienteControlado'
+compiling main.c...
+../Src/main.c(78): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
+../Src/main.c(78): warning:  #177-D: variable "referencia" was declared but never referenced
+../Src/main.c(78): warning:  #550-D: variable "count" was set but never used
+linking...
+Program Size: Code=11144 RO-data=440 RW-data=48 ZI-data=1232  
+"ambienteControlado\ambienteControlado.axf" - 0 Errors, 3 Warning(s).
+Load "ambienteControlado\\ambienteControlado.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'ambienteControlado'
+compiling main.c...
+../Src/main.c(78): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
+../Src/main.c(78): warning:  #177-D: variable "referencia" was declared but never referenced
+../Src/main.c(78): warning:  #550-D: variable "count" was set but never used
+linking...
+Program Size: Code=11144 RO-data=440 RW-data=48 ZI-data=1232  
+"ambienteControlado\ambienteControlado.axf" - 0 Errors, 3 Warning(s).
+Load "ambienteControlado\\ambienteControlado.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'ambienteControlado'
+compiling main.c...
+../Src/main.c(78): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
+../Src/main.c(78): warning:  #177-D: variable "referencia" was declared but never referenced
+../Src/main.c(78): warning:  #550-D: variable "count" was set but never used
+linking...
+Program Size: Code=11120 RO-data=440 RW-data=48 ZI-data=1232  
+"ambienteControlado\ambienteControlado.axf" - 0 Errors, 3 Warning(s).
 Rebuild target 'ambienteControlado'
 compiling stm32f4xx_hal_flash_ex.c...
 compiling stm32f4xx_hal.c...
@@ -31,99 +63,13 @@ compiling main.c...
 ../Src/main.c(78): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
 ../Src/main.c(78): warning:  #177-D: variable "referencia" was declared but never referenced
 ../Src/main.c(78): warning:  #550-D: variable "count" was set but never used
-../Src/main.c(79): warning:  #550-D: variable "apertado" was set but never used
-../Src/main.c(78): warning: C4017W: temperatura may be used before being set
 compiling stm32f4xx_it.c...
 compiling gpio.c...
 compiling adc.c...
 compiling tim.c...
+../Src/tim.c(52): warning:  #177-D: variable "sClockSourceConfig" was declared but never referenced
 linking...
-Program Size: Code=7872 RO-data=440 RW-data=48 ZI-data=1168  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 5 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Rebuild target 'ambienteControlado'
-compiling stm32f4xx_hal_flash_ex.c...
-compiling stm32f4xx_hal.c...
-compiling stm32f4xx_hal_tim.c...
-compiling stm32f4xx_hal_gpio.c...
-compiling stm32f4xx_hal_dma_ex.c...
-compiling stm32f4xx_hal_pwr.c...
-compiling stm32f4xx_hal_rcc_ex.c...
-compiling stm32f4xx_hal_flash_ramfunc.c...
-compiling stm32f4xx_hal_rcc.c...
-compiling stm32f4xx_hal_flash.c...
-compiling stm32f4xx_hal_cortex.c...
-compiling stm32f4xx_hal_tim_ex.c...
-compiling stm32f4xx_hal_dma.c...
-compiling stm32f4xx_hal_pwr_ex.c...
-compiling stm32f4xx_hal_adc.c...
-compiling stm32f4xx_hal_adc_ex.c...
-assembling startup_stm32f407xx.s...
-compiling system_stm32f4xx.c...
-compiling stm32f4xx_hal_msp.c...
-compiling main.c...
-../Src/main.c(78): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(78): warning:  #177-D: variable "referencia" was declared but never referenced
-../Src/main.c(78): warning:  #550-D: variable "count" was set but never used
-../Src/main.c(79): warning:  #550-D: variable "apertado" was set but never used
-../Src/main.c(78): warning: C4017W: temperatura may be used before being set
-compiling stm32f4xx_it.c...
-compiling gpio.c...
-compiling adc.c...
-compiling tim.c...
-linking...
-Program Size: Code=7876 RO-data=440 RW-data=48 ZI-data=1168  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 5 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(78): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(78): warning:  #177-D: variable "referencia" was declared but never referenced
-../Src/main.c(78): warning:  #550-D: variable "count" was set but never used
-../Src/main.c(79): warning:  #550-D: variable "apertado" was set but never used
-../Src/main.c(78): warning: C4017W: temperatura may be used before being set
-linking...
-Program Size: Code=7872 RO-data=440 RW-data=48 ZI-data=1168  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 5 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(78): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(78): warning:  #177-D: variable "referencia" was declared but never referenced
-../Src/main.c(78): warning:  #550-D: variable "count" was set but never used
-../Src/main.c(79): warning:  #550-D: variable "apertado" was set but never used
-linking...
-Program Size: Code=7880 RO-data=440 RW-data=48 ZI-data=1168  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 4 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(78): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(78): warning:  #177-D: variable "referencia" was declared but never referenced
-../Src/main.c(78): warning:  #550-D: variable "count" was set but never used
-../Src/main.c(79): warning:  #550-D: variable "apertado" was set but never used
-linking...
-Program Size: Code=6964 RO-data=440 RW-data=48 ZI-data=1168  
+Program Size: Code=11120 RO-data=440 RW-data=48 ZI-data=1232  
 "ambienteControlado\ambienteControlado.axf" - 0 Errors, 4 Warning(s).
 Load "ambienteControlado\\ambienteControlado.axf" 
 Erase Done.
@@ -134,10 +80,98 @@ compiling main.c...
 ../Src/main.c(78): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
 ../Src/main.c(78): warning:  #177-D: variable "referencia" was declared but never referenced
 ../Src/main.c(78): warning:  #550-D: variable "count" was set but never used
-../Src/main.c(79): warning:  #550-D: variable "apertado" was set but never used
 linking...
-Program Size: Code=6964 RO-data=440 RW-data=48 ZI-data=1168  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 4 Warning(s).
+Program Size: Code=11120 RO-data=440 RW-data=48 ZI-data=1232  
+"ambienteControlado\ambienteControlado.axf" - 0 Errors, 3 Warning(s).
+Load "ambienteControlado\\ambienteControlado.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'ambienteControlado'
+compiling main.c...
+../Src/main.c(78): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
+../Src/main.c(78): warning:  #177-D: variable "referencia" was declared but never referenced
+../Src/main.c(78): warning:  #550-D: variable "count" was set but never used
+linking...
+Program Size: Code=10932 RO-data=440 RW-data=48 ZI-data=1232  
+"ambienteControlado\ambienteControlado.axf" - 0 Errors, 3 Warning(s).
+Load "ambienteControlado\\ambienteControlado.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'ambienteControlado'
+compiling main.c...
+../Src/main.c(78): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
+../Src/main.c(78): warning:  #177-D: variable "referencia" was declared but never referenced
+linking...
+Program Size: Code=10944 RO-data=440 RW-data=48 ZI-data=1232  
+"ambienteControlado\ambienteControlado.axf" - 0 Errors, 2 Warning(s).
+Load "ambienteControlado\\ambienteControlado.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'ambienteControlado'
+compiling main.c...
+../Src/main.c(78): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
+../Src/main.c(78): warning:  #177-D: variable "referencia" was declared but never referenced
+linking...
+Program Size: Code=10940 RO-data=440 RW-data=48 ZI-data=1232  
+"ambienteControlado\ambienteControlado.axf" - 0 Errors, 2 Warning(s).
+Build target 'ambienteControlado'
+compiling main.c...
+../Src/main.c(78): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
+../Src/main.c(78): warning:  #177-D: variable "referencia" was declared but never referenced
+linking...
+Program Size: Code=10944 RO-data=440 RW-data=48 ZI-data=1232  
+"ambienteControlado\ambienteControlado.axf" - 0 Errors, 2 Warning(s).
+Load "ambienteControlado\\ambienteControlado.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'ambienteControlado'
+compiling main.c...
+../Src/main.c(78): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
+../Src/main.c(78): warning:  #177-D: variable "referencia" was declared but never referenced
+linking...
+Program Size: Code=10944 RO-data=440 RW-data=48 ZI-data=1232  
+"ambienteControlado\ambienteControlado.axf" - 0 Errors, 2 Warning(s).
+Load "ambienteControlado\\ambienteControlado.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'ambienteControlado'
+compiling main.c...
+../Src/main.c(78): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
+../Src/main.c(78): warning:  #177-D: variable "referencia" was declared but never referenced
+linking...
+Program Size: Code=10956 RO-data=440 RW-data=48 ZI-data=1232  
+"ambienteControlado\ambienteControlado.axf" - 0 Errors, 2 Warning(s).
+Load "ambienteControlado\\ambienteControlado.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'ambienteControlado'
+compiling main.c...
+../Src/main.c(78): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
+../Src/main.c(78): warning:  #177-D: variable "referencia" was declared but never referenced
+linking...
+Program Size: Code=10956 RO-data=440 RW-data=48 ZI-data=1232  
+"ambienteControlado\ambienteControlado.axf" - 0 Errors, 2 Warning(s).
+Load "ambienteControlado\\ambienteControlado.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'ambienteControlado'
+compiling main.c...
+../Src/main.c(78): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
+../Src/main.c(78): warning:  #177-D: variable "referencia" was declared but never referenced
+linking...
+Program Size: Code=10956 RO-data=440 RW-data=48 ZI-data=1232  
+"ambienteControlado\ambienteControlado.axf" - 0 Errors, 2 Warning(s).
+Load "ambienteControlado\\ambienteControlado.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
 Load "ambienteControlado\\ambienteControlado.axf" 
 Erase Done.
 Programming Done.

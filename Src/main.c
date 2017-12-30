@@ -64,7 +64,7 @@ void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
 /* Private function prototypes -----------------------------------------------*/
 void writeToLeftDisplays(int);
-void setPWM(TIM_HandleTypeDef, uint32_t, uint16_t, uint16_t);
+void setPWM(TIM_HandleTypeDef, uint32_t, uint16_t);
 
 /* USER CODE END PFP */
 
@@ -78,7 +78,7 @@ int main(void)
 	int temperatura, temperaturaAn, referencia, count;
 	bool apertado, controleAtivo;
 	apertado = false;
-	controleAtivo = true;
+	controleAtivo = false;
   /* USER CODE END 1 */
 
   /* MCU Configuration----------------------------------------------------------*/
@@ -106,8 +106,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
 	HAL_ADC_Start(&hadc1);
 	HAL_ADC_Start(&hadc2);
-//	HAL_TIM_Base_Start(&htim4); 
-//	HAL_TIM_PWM_Start(&htim4,TIM_CHANNEL_3);
+	MX_TIM4_Init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -116,14 +115,13 @@ int main(void)
   while (1)
   {
 		
-		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_1, GPIO_PIN_SET);
-//		if (!apertado && HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin) == GPIO_PIN_SET) { //Se botão apertado
-//			HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_1); // porta para ativar lâmpada
-//			HAL_GPIO_TogglePin(LD6_GPIO_Port, LD6_Pin); //led para indicar ligado
-//			controleAtivo = !controleAtivo; //liga e desliga o sistema de controle e exibição
-//			apertado = true;
-//		}
-//		if (HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin) == GPIO_PIN_RESET) apertado = false;
+		if (!apertado && HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin) == GPIO_PIN_SET) { //Se botão apertado
+			HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_1); // porta para ativar lâmpada
+			HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_13); //led para indicar ligado
+			controleAtivo = !controleAtivo; //liga e desliga o sistema de controle e exibição
+			apertado = true;
+		}
+		if (HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin) == GPIO_PIN_RESET) apertado = false;
 		
 		
 		/*
@@ -138,15 +136,20 @@ int main(void)
 		if (controleAtivo) { //sistema de controle e exibição
 			if (HAL_ADC_PollForConversion(&hadc1, 300) == HAL_OK) temperatura = HAL_ADC_GetValue(&hadc1);
 			//if (HAL_ADC_PollForConversion(&hadc2, 300) == HAL_OK) referencia = HAL_ADC_GetValue(&hadc2);
+			setPWM(htim4, TIM_CHANNEL_4, count*4095/30); //teste do PWM
 			temperatura = temperatura * 3300 / 0xFFF; //int 12 bits para tensão
-			temperatura = temperatura/20;
-			if (temperatura > 99) {
-				
-			writeToLeftDisplays(99);	
-			} else {
-				
-			writeToLeftDisplays(temperatura);	
+			temperatura = temperatura/18;
+			if (count == 0) { //atualiza a temperatura no display a cada 30 iterações do while
+				if (temperatura > 99) {
+					
+				writeToLeftDisplays(99);	
+				} else {
+					
+				writeToLeftDisplays(temperatura);	
+				}
 			}
+			count++;
+			if (count == 31) count = 0;
 			
 			//temperatura = 25;
 			//referencia = (7 + 0.713*referencia)/10;
@@ -167,9 +170,9 @@ int main(void)
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
-	//não se deve usar delay por causa do poll do adc (aumenta muito o atraso)
-		HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_13);
-		HAL_Delay(1000);
+
+		//HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_13);
+		HAL_Delay(50);
 		//writeToLeftDisplays(39);
   }
   /* USER CODE END 3 */
@@ -254,21 +257,23 @@ void writeToLeftDisplays(int number) {
 	
 }
 
-void setPWM(TIM_HandleTypeDef timer, uint32_t channel, uint16_t period,
-uint16_t pulse)
-{
- HAL_TIM_PWM_Stop(&timer, channel); // stop generation of pwm
- TIM_OC_InitTypeDef sConfigOC;
- timer.Init.Period = period; // set the period duration
- HAL_TIM_PWM_Init(&timer); // reinititialise with new period value
- sConfigOC.OCMode = TIM_OCMODE_PWM1;
- sConfigOC.Pulse = pulse; // set the pulse duration
- sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
- sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
- HAL_TIM_PWM_ConfigChannel(&timer, &sConfigOC, channel);
- HAL_TIM_PWM_Start(&timer, channel); // start pwm generation
+void setPWM(TIM_HandleTypeDef timer, uint32_t channel, uint16_t pulse) { 
+  HAL_TIM_PWM_Stop(&timer, channel);    
+// stop generation of pwm
+  TIM_OC_InitTypeDef sConfigOC; 
+  timer.Init.Period = 4095;           
+// set the period duration
+  HAL_TIM_PWM_Init(&timer);  
+// reinititialise with new period value
+  sConfigOC.OCMode = TIM_OCMODE_PWM1; 
+  sConfigOC.Pulse = pulse;              
+// set the pulse duration 
+  sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH; 
+  sConfigOC.OCFastMode = TIM_OCFAST_DISABLE; 
+  HAL_TIM_PWM_ConfigChannel(&timer, &sConfigOC, channel); 
+  HAL_TIM_PWM_Start(&timer, channel);   
+// start pwm generation
 } 
-
 /* USER CODE END 4 */
 
 /**
