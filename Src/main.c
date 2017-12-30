@@ -63,8 +63,7 @@ void SystemClock_Config(void);
 
 /* USER CODE BEGIN PFP */
 /* Private function prototypes -----------------------------------------------*/
-void writeTo7seg(int, int);
-void writeToDisplay(int);
+void writeToLeftDisplays(int);
 void setPWM(TIM_HandleTypeDef, uint32_t, uint16_t, uint16_t);
 
 /* USER CODE END PFP */
@@ -79,7 +78,7 @@ int main(void)
 	int temperatura, temperaturaAn, referencia, count;
 	bool apertado, controleAtivo;
 	apertado = false;
-	controleAtivo = false;
+	controleAtivo = true;
   /* USER CODE END 1 */
 
   /* MCU Configuration----------------------------------------------------------*/
@@ -100,13 +99,13 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-//  MX_ADC1_Init();
-//  MX_ADC2_Init();
+  MX_ADC1_Init();
+  MX_ADC2_Init();
 //  MX_TIM4_Init();
 
   /* USER CODE BEGIN 2 */
-//	HAL_ADC_Start(&hadc1);
-//	HAL_ADC_Start(&hadc2);
+	HAL_ADC_Start(&hadc1);
+	HAL_ADC_Start(&hadc2);
 //	HAL_TIM_Base_Start(&htim4); 
 //	HAL_TIM_PWM_Start(&htim4,TIM_CHANNEL_3);
   /* USER CODE END 2 */
@@ -117,7 +116,7 @@ int main(void)
   while (1)
   {
 		
-//		HAL_GPIO_WritePin(GPIOE, GPIO_PIN_7, GPIO_PIN_SET);
+		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_1, GPIO_PIN_SET);
 //		if (!apertado && HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin) == GPIO_PIN_SET) { //Se botão apertado
 //			HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_1); // porta para ativar lâmpada
 //			HAL_GPIO_TogglePin(LD6_GPIO_Port, LD6_Pin); //led para indicar ligado
@@ -136,25 +135,34 @@ int main(void)
 		T = V/10 (V em mV)
 	*/
 		
-//		if (controleAtivo) { //sistema de controle e exibição
-//			if (HAL_ADC_PollForConversion(&hadc1, 300) == HAL_OK) temperatura = HAL_ADC_GetValue(&hadc1);
-//			if (HAL_ADC_PollForConversion(&hadc2, 300) == HAL_OK) referencia = HAL_ADC_GetValue(&hadc2);
-//			temperatura = 7 + 0.713*temperatura; //int 12 bits para tensão
-//			temperatura = temperatura/10;
-//			temperatura = 25;
-//			referencia = (7 + 0.713*referencia)/10;
-//			writeTo7seg((count > 1) ? temperatura : referencia, count);
-//			count++;
-//			if (count == 4) count = 0;
-//			setPWM(htim4, TIM_CHANNEL_3, 4095, count << 9); 
-//		}
-//		else { //Desligando
+		if (controleAtivo) { //sistema de controle e exibição
+			if (HAL_ADC_PollForConversion(&hadc1, 300) == HAL_OK) temperatura = HAL_ADC_GetValue(&hadc1);
+			//if (HAL_ADC_PollForConversion(&hadc2, 300) == HAL_OK) referencia = HAL_ADC_GetValue(&hadc2);
+			temperatura = temperatura * 3300 / 0xFFF; //int 12 bits para tensão
+			temperatura = temperatura/20;
+			if (temperatura > 99) {
+				
+			writeToLeftDisplays(99);	
+			} else {
+				
+			writeToLeftDisplays(temperatura);	
+			}
+			
+			//temperatura = 25;
+			//referencia = (7 + 0.713*referencia)/10;
+			//writeTo7seg((count > 1) ? temperatura : referencia, count);
+			//count++;
+			//if (count == 4) count = 0;
+			//setPWM(htim4, TIM_CHANNEL_3, 4095, count << 9); 
+		}
+		else { //Desligando
+//			writeToLeftDisplays(0);
 //			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_All & ~GPIO_PIN_15 & ~GPIO_PIN_14, GPIO_PIN_RESET);
 //			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_All & ~GPIO_PIN_15 & ~GPIO_PIN_14, GPIO_PIN_RESET);
 //			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, GPIO_PIN_RESET);
 //			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, GPIO_PIN_RESET);
-//			
-//		}
+			
+		}
 		
   /* USER CODE END WHILE */
 
@@ -162,7 +170,7 @@ int main(void)
 	//não se deve usar delay por causa do poll do adc (aumenta muito o atraso)
 		HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_13);
 		HAL_Delay(1000);
-		writeToDisplay(39);
+		//writeToLeftDisplays(39);
   }
   /* USER CODE END 3 */
 
@@ -224,65 +232,26 @@ void SystemClock_Config(void)
   HAL_NVIC_SetPriority(SysTick_IRQn, 0, 0);
 }
 
-void writeToDisplay(int number) {
+void writeToLeftDisplays(int number) {
 	
-	
-	
-	for (int i = 0; i < 100; i++) {
-		int dezena = i / 10;
-	int unidade = i % 10;
-		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_All, GPIO_PIN_RESET);
+		int dezena = number / 10;
+	  int unidade = number % 10;
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_All & ~GPIO_PIN_1 & ~GPIO_PIN_0, GPIO_PIN_RESET);
 		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_All, GPIO_PIN_RESET);
 		HAL_GPIO_WritePin(GPIOB, vetorB[dezena] << 4, GPIO_PIN_SET);
 	  HAL_GPIO_WritePin(GPIOC, vetorC[unidade] << 2, GPIO_PIN_SET);
-		HAL_Delay(200);
-		
-	}
 	
-}
-
-/* USER CODE BEGIN 4 */
-void writeTo7seg(int num, int count) {
-	uint16_t re, qu;
-	uint16_t vetor[10] = {0x7E, 0x48, 0x3D, 0x6D, 0x4B, 0x67, 0x77, 0x4C, 0x7F, 0x6F};
-	re = num % 10;
-	qu = num / 10;
-	switch (count) {
-		case 0:
-			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_All, GPIO_PIN_SET);
-			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_All, GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
-			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(GPIOE, vetor[qu] << 7, GPIO_PIN_SET);
-			HAL_GPIO_WritePin(GPIOE, (~vetor[qu] & 0x7f) << 7, GPIO_PIN_RESET);
-			break;
-		case 1:
-			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_All, GPIO_PIN_SET);
-			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_All, GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, GPIO_PIN_SET);
-			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_7, GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(GPIOE, vetor[re]<< 7, GPIO_PIN_SET);
-			HAL_GPIO_WritePin(GPIOE, (~vetor[re] & 0x7f) << 7, GPIO_PIN_RESET);
-			break;
-		case 2:
-			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_All, GPIO_PIN_SET);
-			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_All, GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_7, GPIO_PIN_SET);
-			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(GPIOE, vetor[qu]<< 7, GPIO_PIN_SET);
-			HAL_GPIO_WritePin(GPIOE, (~vetor[qu] & 0x7f) << 7, GPIO_PIN_RESET);
-			break;
-		case 3:
-			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_All, GPIO_PIN_SET);
-			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_All, GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET);
-			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(GPIOE, vetor[re]<< 7, GPIO_PIN_SET);
-			HAL_GPIO_WritePin(GPIOE, (~vetor[re] & 0x7f) << 7, GPIO_PIN_RESET);
-			break;
-	}
-//	HAL_GPIO_WritePin(GPIOx, vetor[qu] << 9, GPIO_PIN_SET);
-//	HAL_GPIO_WritePin(GPIOx, (~vetor[qu] << 9) & 0x3f00, GPIO_PIN_RESET);
+//	for (int i = 0; i < 100; i++) {
+//		int dezena = i / 10;
+//	  int unidade = i % 10;
+//		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_All, GPIO_PIN_RESET);
+//		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_All, GPIO_PIN_RESET);
+//		HAL_GPIO_WritePin(GPIOB, vetorB[dezena] << 4, GPIO_PIN_SET);
+//	  HAL_GPIO_WritePin(GPIOC, vetorC[unidade] << 2, GPIO_PIN_SET);
+//		HAL_Delay(200);
+//		
+//	}
+	
 }
 
 void setPWM(TIM_HandleTypeDef timer, uint32_t channel, uint16_t period,
