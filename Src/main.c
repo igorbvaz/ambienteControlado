@@ -9,7 +9,7 @@
   * inserted by the user or by software development tools
   * are owned by their respective copyright owners.
   *
-  * COPYRIGHT(c) 2017 STMicroelectronics
+  * COPYRIGHT(c) 2018 STMicroelectronics
   *
   * Redistribution and use in source and binary forms, with or without modification,
   * are permitted provided that the following conditions are met:
@@ -41,6 +41,7 @@
 #include "stm32f4xx_hal.h"
 #include "adc.h"
 #include "tim.h"
+#include "usart.h"
 #include "gpio.h"
 
 /* USER CODE BEGIN Includes */
@@ -79,6 +80,7 @@ int main(void)
 	bool apertado, controleAtivo;
 	apertado = false;
 	controleAtivo = false;
+	uint8_t buffer[7] = "o";
   /* USER CODE END 1 */
 
   /* MCU Configuration----------------------------------------------------------*/
@@ -101,7 +103,8 @@ int main(void)
   MX_GPIO_Init();
   MX_ADC1_Init();
   MX_ADC2_Init();
-//  MX_TIM4_Init();
+  MX_TIM4_Init();
+  MX_USART1_UART_Init();
 
   /* USER CODE BEGIN 2 */
 	HAL_ADC_Start(&hadc1);
@@ -114,7 +117,8 @@ int main(void)
 	count = 0;
   while (1)
   {
-		
+		//HAL_UART_Receive(&huart1, buffer, sizeof(buffer), HAL_MAX_DELAY);
+		HAL_UART_Transmit(&huart1, buffer, sizeof(buffer), HAL_MAX_DELAY);
 		if (!apertado && HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin) == GPIO_PIN_SET) { //Se botão apertado
 			HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_1); // porta para ativar lâmpada
 			HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_13); //led para indicar ligado
@@ -235,6 +239,8 @@ void SystemClock_Config(void)
   HAL_NVIC_SetPriority(SysTick_IRQn, 0, 0);
 }
 
+/* USER CODE BEGIN 4 */
+
 void writeToLeftDisplays(int number) {
 	
 		int dezena = number / 10;
@@ -274,6 +280,7 @@ void setPWM(TIM_HandleTypeDef timer, uint32_t channel, uint16_t pulse) {
   HAL_TIM_PWM_Start(&timer, channel);   
 // start pwm generation
 } 
+
 /* USER CODE END 4 */
 
 /**

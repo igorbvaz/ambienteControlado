@@ -15,6 +15,7 @@
 "ambientecontrolado\stm32f4xx_hal_pwr_ex.o"
 "ambientecontrolado\stm32f4xx_hal_adc.o"
 "ambientecontrolado\stm32f4xx_hal_adc_ex.o"
+"ambientecontrolado\stm32f4xx_hal_uart.o"
 "ambientecontrolado\startup_stm32f407xx.o"
 "ambientecontrolado\system_stm32f4xx.o"
 "ambientecontrolado\stm32f4xx_hal_msp.o"
@@ -23,6 +24,7 @@
 "ambientecontrolado\gpio.o"
 "ambientecontrolado\adc.o"
 "ambientecontrolado\tim.o"
+"ambientecontrolado\usart.o"
 --library_type=microlib --strict --scatter "ambienteControlado\ambienteControlado.sct"
 
 --diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols

@@ -31,7 +31,9 @@ ambientecontrolado\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr
 ambientecontrolado\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 ambientecontrolado\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 ambientecontrolado\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
+ambientecontrolado\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 ambientecontrolado\main.o: ../Inc/adc.h
 ambientecontrolado\main.o: ../Inc/tim.h
+ambientecontrolado\main.o: ../Inc/usart.h
 ambientecontrolado\main.o: ../Inc/gpio.h
 ambientecontrolado\main.o: C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h
