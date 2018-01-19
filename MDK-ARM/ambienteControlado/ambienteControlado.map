@@ -1185,16 +1185,16 @@ Image Symbol Table
     i.main                                   0x08003634   Section        0  main.o(i.main)
     i.setPWM                                 0x080037a4   Section        0  main.o(i.setPWM)
     i.writeToLeftDisplays                    0x080037e8   Section        0  main.o(i.writeToLeftDisplays)
-    .constdata                               0x0800384c   Section       16  system_stm32f4xx.o(.constdata)
-    .constdata                               0x0800385c   Section        8  system_stm32f4xx.o(.constdata)
-    .constdata                               0x08003864   Section        7  main.o(.constdata)
+    .constdata                               0x08003840   Section       16  system_stm32f4xx.o(.constdata)
+    .constdata                               0x08003850   Section        8  system_stm32f4xx.o(.constdata)
+    .constdata                               0x08003858   Section        7  main.o(.constdata)
     .data                                    0x20000000   Section        4  stm32f4xx_hal.o(.data)
     .data                                    0x20000004   Section        4  system_stm32f4xx.o(.data)
-    .data                                    0x20000008   Section       40  main.o(.data)
-    .bss                                     0x20000030   Section      144  adc.o(.bss)
-    .bss                                     0x200000c0   Section       60  tim.o(.bss)
-    .bss                                     0x200000fc   Section       64  usart.o(.bss)
-    STACK                                    0x20000140   Section     1024  startup_stm32f407xx.o(STACK)
+    .data                                    0x20000008   Section       20  main.o(.data)
+    .bss                                     0x2000001c   Section      144  adc.o(.bss)
+    .bss                                     0x200000ac   Section       60  tim.o(.bss)
+    .bss                                     0x200000e8   Section       64  usart.o(.bss)
+    STACK                                    0x20000128   Section     1024  startup_stm32f407xx.o(STACK)
 
     Global Symbols
 
@@ -1378,20 +1378,20 @@ Image Symbol Table
     assert_failed                            0x08003631   Thumb Code     2  main.o(i.assert_failed)
     main                                     0x08003635   Thumb Code   334  main.o(i.main)
     setPWM                                   0x080037a5   Thumb Code    68  main.o(i.setPWM)
-    writeToLeftDisplays                      0x080037e9   Thumb Code    88  main.o(i.writeToLeftDisplays)
-    AHBPrescTable                            0x0800384c   Data          16  system_stm32f4xx.o(.constdata)
-    APBPrescTable                            0x0800385c   Data           8  system_stm32f4xx.o(.constdata)
-    Region$$Table$$Base                      0x0800386c   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x0800388c   Number         0  anon$$obj.o(Region$$Table)
+    writeToLeftDisplays                      0x080037e9   Thumb Code    76  main.o(i.writeToLeftDisplays)
+    AHBPrescTable                            0x08003840   Data          16  system_stm32f4xx.o(.constdata)
+    APBPrescTable                            0x08003850   Data           8  system_stm32f4xx.o(.constdata)
+    Region$$Table$$Base                      0x08003860   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08003880   Number         0  anon$$obj.o(Region$$Table)
     uwTick                                   0x20000000   Data           4  stm32f4xx_hal.o(.data)
     SystemCoreClock                          0x20000004   Data           4  system_stm32f4xx.o(.data)
-    vetorB                                   0x20000008   Data          20  main.o(.data)
-    vetorC                                   0x2000001c   Data          20  main.o(.data)
-    hadc1                                    0x20000030   Data          72  adc.o(.bss)
-    hadc2                                    0x20000078   Data          72  adc.o(.bss)
-    htim4                                    0x200000c0   Data          60  tim.o(.bss)
-    huart1                                   0x200000fc   Data          64  usart.o(.bss)
-    __initial_sp                             0x20000540   Data           0  startup_stm32f407xx.o(STACK)
+    vetorD                                   0x20000008   Data          10  main.o(.data)
+    vetorE                                   0x20000012   Data          10  main.o(.data)
+    hadc1                                    0x2000001c   Data          72  adc.o(.bss)
+    hadc2                                    0x20000064   Data          72  adc.o(.bss)
+    htim4                                    0x200000ac   Data          60  tim.o(.bss)
+    huart1                                   0x200000e8   Data          64  usart.o(.bss)
+    __initial_sp                             0x20000528   Data           0  startup_stm32f407xx.o(STACK)
 
 
 
@@ -1401,9 +1401,9 @@ Memory Map of the image
 
   Image Entry point : 0x08000189
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x000038bc, Max: 0x00100000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x0000389c, Max: 0x00100000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x0000388c, Max: 0x00100000, ABSOLUTE)
+    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x00003880, Max: 0x00100000, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -1502,26 +1502,25 @@ Memory Map of the image
     0x08003632   0x00000002   PAD
     0x08003634   0x00000170   Code   RO         2679    i.main              main.o
     0x080037a4   0x00000044   Code   RO         2680    i.setPWM            main.o
-    0x080037e8   0x00000064   Code   RO         2681    i.writeToLeftDisplays  main.o
-    0x0800384c   0x00000010   Data   RO         2616    .constdata          system_stm32f4xx.o
-    0x0800385c   0x00000008   Data   RO         2617    .constdata          system_stm32f4xx.o
-    0x08003864   0x00000007   Data   RO         2682    .constdata          main.o
-    0x0800386b   0x00000001   PAD
-    0x0800386c   0x00000020   Data   RO         2968    Region$$Table       anon$$obj.o
+    0x080037e8   0x00000058   Code   RO         2681    i.writeToLeftDisplays  main.o
+    0x08003840   0x00000010   Data   RO         2616    .constdata          system_stm32f4xx.o
+    0x08003850   0x00000008   Data   RO         2617    .constdata          system_stm32f4xx.o
+    0x08003858   0x00000007   Data   RO         2682    .constdata          main.o
+    0x0800385f   0x00000001   PAD
+    0x08003860   0x00000020   Data   RO         2968    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00000540, Max: 0x00020000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00000528, Max: 0x00020000, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x20000000   0x00000004   Data   RW          203    .data               stm32f4xx_hal.o
     0x20000004   0x00000004   Data   RW         2618    .data               system_stm32f4xx.o
-    0x20000008   0x00000028   Data   RW         2683    .data               main.o
-    0x20000030   0x00000090   Zero   RW         2808    .bss                adc.o
-    0x200000c0   0x0000003c   Zero   RW         2856    .bss                tim.o
-    0x200000fc   0x00000040   Zero   RW         2903    .bss                usart.o
-    0x2000013c   0x00000004   PAD
-    0x20000140   0x00000400   Zero   RW         2604    STACK               startup_stm32f407xx.o
+    0x20000008   0x00000014   Data   RW         2683    .data               main.o
+    0x2000001c   0x00000090   Zero   RW         2808    .bss                adc.o
+    0x200000ac   0x0000003c   Zero   RW         2856    .bss                tim.o
+    0x200000e8   0x00000040   Zero   RW         2903    .bss                usart.o
+    0x20000128   0x00000400   Zero   RW         2604    STACK               startup_stm32f407xx.o
 
 
 ==============================================================================
@@ -1533,7 +1532,7 @@ Image component sizes
 
        308         68          0          0        144       2222   adc.o
        560         30          0          0          0       1227   gpio.o
-       700         54          7         40          0       4514   main.o
+       688         54          7         20          0       4510   main.o
         36          8        392          0       1024        800   startup_stm32f407xx.o
        148         22          0          4          0       4387   stm32f4xx_hal.o
       1852        294          0          0          0       5082   stm32f4xx_hal_adc.o
@@ -1551,9 +1550,9 @@ Image component sizes
        152         36          0          0         64       1634   usart.o
 
     ----------------------------------------------------------------------
-     13738       2512        456         48       1296     769858   Object Totals
+     13726       2512        456         28       1292     769854   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-        18          0          1          0          4          0   (incl. Padding)
+        18          0          1          0          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -1594,15 +1593,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     14020       2528        456         48       1296     764018   Grand Totals
-     14020       2528        456         48       1296     764018   ELF Image Totals
-     14020       2528        456         48          0          0   ROM Totals
+     14008       2528        456         28       1292     764014   Grand Totals
+     14008       2528        456         28       1292     764014   ELF Image Totals
+     14008       2528        456         28          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                14476 (  14.14kB)
-    Total RW  Size (RW Data + ZI Data)              1344 (   1.31kB)
-    Total ROM Size (Code + RO Data + RW Data)      14524 (  14.18kB)
+    Total RO  Size (Code + RO Data)                14464 (  14.13kB)
+    Total RW  Size (RW Data + ZI Data)              1320 (   1.29kB)
+    Total ROM Size (Code + RO Data + RW Data)      14492 (  14.15kB)
 
 ==============================================================================
 

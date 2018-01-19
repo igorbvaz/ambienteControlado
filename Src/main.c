@@ -55,8 +55,10 @@
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
 int ADC_Value;
-uint16_t vetorB[10] = {0xF90, 0x900, 0x788, 0xD88, 0x918, 0xC98, 0xE98, 0x980, 0xF98, 0xD98};
-uint16_t vetorC[10] = {0xAD8, 0x840, 0x2D4, 0xA54, 0x84C, 0xA1C, 0xA9C, 0x850, 0xADC, 0xA5C};
+//uint16_t vetorB[10] = {0xF90, 0x900, 0x788, 0xD88, 0x918, 0xC98, 0xE98, 0x980, 0xF98, 0xD98};
+//uint16_t vetorC[10] = {0xAD8, 0x840, 0x2D4, 0xA54, 0x84C, 0xA1C, 0xA9C, 0x850, 0xADC, 0xA5C};
+uint8_t vetorD[10] = {0xBE, 0x88, 0x3d, 0xad, 0x8b, 0xa7, 0xb7, 0x8c, 0xbf, 0xaf};
+uint8_t vetorE[10] = {0xfc, 0x90, 0x7a, 0xda, 0x96, 0xce, 0xee, 0x98, 0xfe, 0xde};
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -149,7 +151,7 @@ int main(void)
 				writeToLeftDisplays(99);	
 				} else {
 					
-				writeToLeftDisplays(temperatura);	
+				writeToLeftDisplays(88);	
 				}
 			}
 			count++;
@@ -245,21 +247,10 @@ void writeToLeftDisplays(int number) {
 	
 		int dezena = number / 10;
 	  int unidade = number % 10;
-		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_All & ~GPIO_PIN_1 & ~GPIO_PIN_0, GPIO_PIN_RESET);
-		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_All, GPIO_PIN_RESET);
-		HAL_GPIO_WritePin(GPIOB, vetorB[dezena] << 4, GPIO_PIN_SET);
-	  HAL_GPIO_WritePin(GPIOC, vetorC[unidade] << 2, GPIO_PIN_SET);
-	
-//	for (int i = 0; i < 100; i++) {
-//		int dezena = i / 10;
-//	  int unidade = i % 10;
-//		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_All, GPIO_PIN_RESET);
-//		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_All, GPIO_PIN_RESET);
-//		HAL_GPIO_WritePin(GPIOB, vetorB[dezena] << 4, GPIO_PIN_SET);
-//	  HAL_GPIO_WritePin(GPIOC, vetorC[unidade] << 2, GPIO_PIN_SET);
-//		HAL_Delay(200);
-//		
-//	}
+		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_All & ~GPIO_PIN_14, GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(GPIOE, GPIO_PIN_All, GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(GPIOD, vetorD[dezena] << 8, GPIO_PIN_SET);
+	  HAL_GPIO_WritePin(GPIOE, vetorE[unidade] << 6, GPIO_PIN_SET);
 	
 }
 
