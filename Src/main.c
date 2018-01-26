@@ -82,7 +82,7 @@ int main(void)
 	bool apertado, controleAtivo;
 	apertado = false;
 	controleAtivo = false;
-	uint8_t buffer[7] = "o";
+	uint8_t buffer[7] = "batata";
   /* USER CODE END 1 */
 
   /* MCU Configuration----------------------------------------------------------*/
@@ -120,7 +120,7 @@ int main(void)
   while (1)
   {
 		//HAL_UART_Receive(&huart1, buffer, sizeof(buffer), HAL_MAX_DELAY);
-		HAL_UART_Transmit(&huart1, buffer, sizeof(buffer), HAL_MAX_DELAY);
+		HAL_UART_Transmit(&huart1, buffer, sizeof(buffer), 10);
 		if (!apertado && HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin) == GPIO_PIN_SET) { //Se botão apertado
 			HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_1); // porta para ativar lâmpada
 			HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_13); //led para indicar ligado
