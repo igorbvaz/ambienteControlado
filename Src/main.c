@@ -78,11 +78,11 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-	int temperatura, temperaturaAn, referencia, count;
+	int temperatura, temperaturaAn, referencia = 25, count;
 	bool apertado, controleAtivo;
 	apertado = false;
 	controleAtivo = false;
-	uint8_t buffer[7] = "batata";
+	uint8_t buffer[7] = "t";
   /* USER CODE END 1 */
 
   /* MCU Configuration----------------------------------------------------------*/
@@ -120,7 +120,7 @@ int main(void)
   while (1)
   {
 		//HAL_UART_Receive(&huart1, buffer, sizeof(buffer), HAL_MAX_DELAY);
-		HAL_UART_Transmit(&huart2, buffer, sizeof(buffer), 10);
+		
 		if (!apertado && HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin) == GPIO_PIN_SET) { //Se botão apertado
 			HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_1); // porta para ativar lâmpada
 			HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_13); //led para indicar ligado
@@ -141,17 +141,28 @@ int main(void)
 		
 		if (controleAtivo) { //sistema de controle e exibição
 			if (HAL_ADC_PollForConversion(&hadc1, 300) == HAL_OK) temperatura = HAL_ADC_GetValue(&hadc1);
-			//if (HAL_ADC_PollForConversion(&hadc2, 300) == HAL_OK) referencia = HAL_ADC_GetValue(&hadc2);
-			setPWM(htim4, TIM_CHANNEL_3, count*4095/30); //teste do PWM
-			temperatura = temperatura * 3300 / 0xFFF; //int 12 bits para tensão
-			temperatura = temperatura/18;
+			
+			temperatura =(int)((float) temperatura * 3300.0/(0xFFF*15)); //int 12 bits para tensão
+			
+			if (temperatura > referencia) {
+				
+				setPWM(htim4, TIM_CHANNEL_3, (temperatura-referencia)*2*4095/30); //teste do PWM
+				
+			} else {
+				
+				setPWM(htim4, TIM_CHANNEL_3, 0); //teste do PWM
+			}
+			
 			if (count == 0) { //atualiza a temperatura no display a cada 30 iterações do while
+				
+				sprintf((char *)buffer, "t%d%d", referencia, temperatura);
+				HAL_UART_Transmit(&huart2, buffer, sizeof(buffer), 10);
 				if (temperatura > 99) {
 					
 				writeToLeftDisplays(99);	
 				} else {
 					
-				writeToLeftDisplays(88);	
+				writeToLeftDisplays(temperatura);	
 				}
 			}
 			count++;
@@ -165,11 +176,11 @@ int main(void)
 			//setPWM(htim4, TIM_CHANNEL_3, 4095, count << 9); 
 		}
 		else { //Desligando
-//			writeToLeftDisplays(0);
-//			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_All & ~GPIO_PIN_15 & ~GPIO_PIN_14, GPIO_PIN_RESET);
-//			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_All & ~GPIO_PIN_15 & ~GPIO_PIN_14, GPIO_PIN_RESET);
-//			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, GPIO_PIN_RESET);
-//			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, GPIO_PIN_RESET);
+			writeToLeftDisplays(0);
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_All & ~GPIO_PIN_15 & ~GPIO_PIN_14, GPIO_PIN_RESET);
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_All & ~GPIO_PIN_14, GPIO_PIN_RESET);
+			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, GPIO_PIN_RESET);
+			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, GPIO_PIN_RESET);
 			
 		}
 		
