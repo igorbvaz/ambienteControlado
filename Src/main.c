@@ -142,7 +142,7 @@ int main(void)
 		if (controleAtivo) { //sistema de controle e exibição
 			if (HAL_ADC_PollForConversion(&hadc1, 300) == HAL_OK) temperatura = HAL_ADC_GetValue(&hadc1);
 			//if (HAL_ADC_PollForConversion(&hadc2, 300) == HAL_OK) referencia = HAL_ADC_GetValue(&hadc2);
-			setPWM(htim4, TIM_CHANNEL_4, count*4095/30); //teste do PWM
+			setPWM(htim4, TIM_CHANNEL_3, count*4095/30); //teste do PWM
 			temperatura = temperatura * 3300 / 0xFFF; //int 12 bits para tensão
 			temperatura = temperatura/18;
 			if (count == 0) { //atualiza a temperatura no display a cada 30 iterações do while
