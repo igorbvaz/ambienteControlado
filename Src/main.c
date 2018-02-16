@@ -112,6 +112,7 @@ int main(void)
 	HAL_ADC_Start(&hadc1);
 	HAL_ADC_Start(&hadc2);
 	MX_TIM4_Init();
+	setPWM(htim4, TIM_CHANNEL_3,2048);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -140,17 +141,17 @@ int main(void)
 	*/
 		
 		if (controleAtivo) { //sistema de controle e exibição
-			if (HAL_ADC_PollForConversion(&hadc1, 300) == HAL_OK) temperatura = HAL_ADC_GetValue(&hadc1);
+			if (HAL_ADC_PollForConversion(&hadc1, 5000) == HAL_OK) temperatura = HAL_ADC_GetValue(&hadc1);
 			
-			temperatura =(int)((float) temperatura * 3300.0/(0xFFF*15)); //int 12 bits para tensão
+			temperatura =(int)((float) temperatura * 2800/(0xFFF*13)); //int 12 bits para tensão
 			
 			if (temperatura > referencia) {
 				
-				setPWM(htim4, TIM_CHANNEL_3, (temperatura-referencia)*2*4095/30); //teste do PWM
+				//setPWM(htim4, TIM_CHANNEL_3, 4095/30); //teste do PWM
 				
 			} else {
 				
-				setPWM(htim4, TIM_CHANNEL_3, 0); //teste do PWM
+				//setPWM(htim4, TIM_CHANNEL_3, 0); //teste do PWM
 			}
 			
 			if (count == 0) { //atualiza a temperatura no display a cada 30 iterações do while

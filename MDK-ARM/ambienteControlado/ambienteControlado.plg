@@ -3,18 +3,11 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
-C:\Users\Igor\Desktop\projetoLab2\ambienteControlado\MDK-ARM\ambienteControlado.uvproj
-Project File Date:  02/10/2018
+C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\MDK-ARM\ambienteControlado.uvproj
+Project File Date:  02/15/2018
 
 <h2>Output:</h2>
 Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(81): warning:  #177-D: variable "referencia" was declared but never referenced
-linking...
-Program Size: Code=14004 RO-data=448 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 2 Warning(s).
-Rebuild target 'ambienteControlado'
 compiling stm32f4xx_hal_flash_ex.c...
 compiling stm32f4xx_hal.c...
 compiling stm32f4xx_hal_tim.c...
@@ -32,57 +25,118 @@ compiling stm32f4xx_hal_pwr_ex.c...
 compiling stm32f4xx_hal_adc.c...
 compiling stm32f4xx_hal_adc_ex.c...
 compiling stm32f4xx_hal_uart.c...
-assembling startup_stm32f407xx.s...
 compiling system_stm32f4xx.c...
 compiling stm32f4xx_hal_msp.c...
 compiling main.c...
 ../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(81): warning:  #177-D: variable "referencia" was declared but never referenced
+../Src/main.c(81): warning: C4017W: temperatura may be used before being set
 compiling stm32f4xx_it.c...
 compiling gpio.c...
 compiling adc.c...
 compiling tim.c...
 compiling usart.c...
 linking...
-Program Size: Code=14004 RO-data=448 RW-data=28 ZI-data=1292  
+Program Size: Code=14664 RO-data=456 RW-data=28 ZI-data=1292  
 "ambienteControlado\ambienteControlado.axf" - 0 Errors, 2 Warning(s).
 Load "ambienteControlado\\ambienteControlado.axf" 
 Erase Done.
 Programming Done.
 Verify OK.
-Rebuild target 'ambienteControlado'
-compiling stm32f4xx_hal_flash_ex.c...
-compiling stm32f4xx_hal.c...
-compiling stm32f4xx_hal_tim.c...
-compiling stm32f4xx_hal_gpio.c...
-compiling stm32f4xx_hal_dma_ex.c...
-compiling stm32f4xx_hal_pwr.c...
-compiling stm32f4xx_hal_rcc_ex.c...
-compiling stm32f4xx_hal_flash_ramfunc.c...
-compiling stm32f4xx_hal_rcc.c...
-compiling stm32f4xx_hal_flash.c...
-compiling stm32f4xx_hal_cortex.c...
-compiling stm32f4xx_hal_tim_ex.c...
-compiling stm32f4xx_hal_dma.c...
-compiling stm32f4xx_hal_pwr_ex.c...
-compiling stm32f4xx_hal_adc.c...
-compiling stm32f4xx_hal_adc_ex.c...
-compiling stm32f4xx_hal_uart.c...
-assembling startup_stm32f407xx.s...
-compiling system_stm32f4xx.c...
-compiling stm32f4xx_hal_msp.c...
+Build target 'ambienteControlado'
 compiling main.c...
 ../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(81): warning:  #177-D: variable "referencia" was declared but never referenced
-compiling stm32f4xx_it.c...
-compiling gpio.c...
-compiling adc.c...
-compiling tim.c...
-compiling usart.c...
+../Src/main.c(81): warning: C4017W: temperatura may be used before being set
 linking...
-Program Size: Code=14004 RO-data=448 RW-data=28 ZI-data=1292  
+Program Size: Code=13340 RO-data=456 RW-data=28 ZI-data=1292  
 "ambienteControlado\ambienteControlado.axf" - 0 Errors, 2 Warning(s).
-Rebuild target 'ambienteControlado'
+Load "ambienteControlado\\ambienteControlado.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'ambienteControlado'
+compiling main.c...
+../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
+../Src/main.c(81): warning: C4017W: temperatura may be used before being set
+linking...
+Program Size: Code=14548 RO-data=456 RW-data=28 ZI-data=1292  
+"ambienteControlado\ambienteControlado.axf" - 0 Errors, 2 Warning(s).
+Load "ambienteControlado\\ambienteControlado.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'ambienteControlado'
+compiling main.c...
+../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
+../Src/main.c(81): warning: C4017W: temperatura may be used before being set
+linking...
+Program Size: Code=14548 RO-data=456 RW-data=28 ZI-data=1292  
+"ambienteControlado\ambienteControlado.axf" - 0 Errors, 2 Warning(s).
+Load "ambienteControlado\\ambienteControlado.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'ambienteControlado'
+linking...
+Program Size: Code=14548 RO-data=456 RW-data=28 ZI-data=1292  
+"ambienteControlado\ambienteControlado.axf" - 0 Errors, 0 Warning(s).
+Load "ambienteControlado\\ambienteControlado.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'ambienteControlado'
+compiling main.c...
+../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
+../Src/main.c(81): warning: C4017W: temperatura may be used before being set
+linking...
+Program Size: Code=14548 RO-data=456 RW-data=28 ZI-data=1292  
+"ambienteControlado\ambienteControlado.axf" - 0 Errors, 2 Warning(s).
+Load "ambienteControlado\\ambienteControlado.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'ambienteControlado'
+compiling main.c...
+../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
+../Src/main.c(81): warning: C4017W: temperatura may be used before being set
+linking...
+Program Size: Code=14548 RO-data=456 RW-data=28 ZI-data=1292  
+"ambienteControlado\ambienteControlado.axf" - 0 Errors, 2 Warning(s).
+Load "ambienteControlado\\ambienteControlado.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'ambienteControlado'
+compiling main.c...
+../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
+../Src/main.c(81): warning: C4017W: temperatura may be used before being set
+linking...
+Program Size: Code=14548 RO-data=456 RW-data=28 ZI-data=1292  
+"ambienteControlado\ambienteControlado.axf" - 0 Errors, 2 Warning(s).
+Load "ambienteControlado\\ambienteControlado.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'ambienteControlado'
+compiling main.c...
+../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
+../Src/main.c(81): warning: C4017W: temperatura may be used before being set
+linking...
+Program Size: Code=14548 RO-data=456 RW-data=28 ZI-data=1292  
+"ambienteControlado\ambienteControlado.axf" - 0 Errors, 2 Warning(s).
+Load "ambienteControlado\\ambienteControlado.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'ambienteControlado'
+compiling adc.c...
+linking...
+Program Size: Code=14548 RO-data=456 RW-data=28 ZI-data=1292  
+"ambienteControlado\ambienteControlado.axf" - 0 Errors, 0 Warning(s).
+Load "ambienteControlado\\ambienteControlado.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'ambienteControlado'
 compiling stm32f4xx_hal_flash_ex.c...
 compiling stm32f4xx_hal.c...
 compiling stm32f4xx_hal_tim.c...
@@ -100,610 +154,19 @@ compiling stm32f4xx_hal_pwr_ex.c...
 compiling stm32f4xx_hal_adc.c...
 compiling stm32f4xx_hal_adc_ex.c...
 compiling stm32f4xx_hal_uart.c...
-assembling startup_stm32f407xx.s...
 compiling system_stm32f4xx.c...
 compiling stm32f4xx_hal_msp.c...
 compiling main.c...
 ../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
+../Src/main.c(81): warning: C4017W: temperatura may be used before being set
 compiling stm32f4xx_it.c...
 compiling gpio.c...
 compiling adc.c...
 compiling tim.c...
 compiling usart.c...
 linking...
-Program Size: Code=14460 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 1 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling adc.c...
-linking...
-Program Size: Code=14464 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 0 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-linking...
-Program Size: Code=14464 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 1 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(146): error:  #65: expected a ";"
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-"ambienteControlado\ambienteControlado.axf" - 1 Errors, 1 Warning(s).
-Target not created
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(146): error:  #65: expected a ";"
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-"ambienteControlado\ambienteControlado.axf" - 1 Errors, 1 Warning(s).
-Target not created
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(146): error:  #109: expression must have (pointer-to-) function type
-../Src/main.c(146): error:  #29: expected an expression
-../Src/main.c(146): error:  #65: expected a ";"
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-"ambienteControlado\ambienteControlado.axf" - 3 Errors, 1 Warning(s).
-Target not created
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-linking...
-Program Size: Code=15240 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 1 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(146): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(146): error:  #65: expected a ";"
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-"ambienteControlado\ambienteControlado.axf" - 1 Errors, 2 Warning(s).
-Target not created
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(146): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(81): warning: C4017W: temperatura may be used before being set
-linking...
-Program Size: Code=15248 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 3 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(146): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(81): warning: C4017W: temperatura may be used before being set
-linking...
-Program Size: Code=15248 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 3 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(146): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(81): warning: C4017W: temperatura may be used before being set
-linking...
-Program Size: Code=15248 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 3 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(146): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(81): warning: C4017W: temperatura may be used before being set
-linking...
-Program Size: Code=15248 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 3 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(146): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(81): warning: C4017W: temperatura may be used before being set
-linking...
-Program Size: Code=15248 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 3 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-linking...
-Program Size: Code=15248 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 0 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(146): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(81): warning: C4017W: temperatura may be used before being set
-linking...
-Program Size: Code=15248 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 3 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(146): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(81): warning: C4017W: temperatura may be used before being set
-linking...
-Program Size: Code=15248 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 3 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(146): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(81): warning: C4017W: temperatura may be used before being set
-linking...
-Program Size: Code=15248 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 3 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(146): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(157): error:  #24: invalid octal digit
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-"ambienteControlado\ambienteControlado.axf" - 1 Errors, 2 Warning(s).
-Target not created
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(146): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(81): warning: C4017W: temperatura may be used before being set
-linking...
-Program Size: Code=15248 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 3 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(146): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(81): warning: C4017W: temperatura may be used before being set
-linking...
-Program Size: Code=15248 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 3 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(146): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(81): warning: C4017W: temperatura may be used before being set
-linking...
-Program Size: Code=15248 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 3 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(146): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(81): warning: C4017W: temperatura may be used before being set
-linking...
-Program Size: Code=15248 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 3 Warning(s).
-Build target 'ambienteControlado'
-linking...
-Program Size: Code=15248 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 0 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(146): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(81): warning: C4017W: temperatura may be used before being set
-linking...
-Program Size: Code=15248 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 3 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(146): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(81): warning: C4017W: temperatura may be used before being set
-linking...
-Program Size: Code=15248 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 3 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(146): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(81): warning: C4017W: temperatura may be used before being set
-linking...
-Program Size: Code=15248 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 3 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(146): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(81): warning: C4017W: temperatura may be used before being set
-linking...
-Program Size: Code=15248 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 3 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(146): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(81): warning: C4017W: temperatura may be used before being set
-linking...
-Program Size: Code=15248 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 3 Warning(s).
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(146): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(81): warning: C4017W: temperatura may be used before being set
-linking...
-Program Size: Code=15248 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 3 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(146): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(81): warning: C4017W: temperatura may be used before being set
-linking...
-Program Size: Code=15240 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 3 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(146): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(194): error:  #65: expected a ";"
-../Src/main.c(215): warning:  #12-D: parsing restarts here after previous syntax error
-../Src/main.c(216): warning:  #111-D: statement is unreachable
-../Src/main.c(216): error:  #20: identifier "RCC_OscInitStruct" is undefined
-../Src/main.c(223): error:  #20: identifier "RCC_ClkInitStruct" is undefined
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-"ambienteControlado\ambienteControlado.axf" - 3 Errors, 4 Warning(s).
-Target not created
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(146): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(194): error:  #65: expected a ";"
-../Src/main.c(215): warning:  #12-D: parsing restarts here after previous syntax error
-../Src/main.c(216): warning:  #111-D: statement is unreachable
-../Src/main.c(216): error:  #20: identifier "RCC_OscInitStruct" is undefined
-../Src/main.c(223): error:  #20: identifier "RCC_ClkInitStruct" is undefined
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-"ambienteControlado\ambienteControlado.axf" - 3 Errors, 4 Warning(s).
-Target not created
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(146): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(194): error:  #65: expected a ";"
-../Src/main.c(215): warning:  #12-D: parsing restarts here after previous syntax error
-../Src/main.c(216): warning:  #111-D: statement is unreachable
-../Src/main.c(216): error:  #20: identifier "RCC_OscInitStruct" is undefined
-../Src/main.c(223): error:  #20: identifier "RCC_ClkInitStruct" is undefined
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-"ambienteControlado\ambienteControlado.axf" - 3 Errors, 4 Warning(s).
-Target not created
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(146): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(194): error:  #65: expected a ";"
-../Src/main.c(215): warning:  #12-D: parsing restarts here after previous syntax error
-../Src/main.c(216): warning:  #111-D: statement is unreachable
-../Src/main.c(216): error:  #20: identifier "RCC_OscInitStruct" is undefined
-../Src/main.c(223): error:  #20: identifier "RCC_ClkInitStruct" is undefined
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-"ambienteControlado\ambienteControlado.axf" - 3 Errors, 4 Warning(s).
-Target not created
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Rebuild target 'ambienteControlado'
-compiling stm32f4xx_hal_flash_ex.c...
-compiling stm32f4xx_hal.c...
-compiling stm32f4xx_hal_tim.c...
-compiling stm32f4xx_hal_gpio.c...
-compiling stm32f4xx_hal_dma_ex.c...
-compiling stm32f4xx_hal_pwr.c...
-compiling stm32f4xx_hal_rcc_ex.c...
-compiling stm32f4xx_hal_flash_ramfunc.c...
-compiling stm32f4xx_hal_rcc.c...
-compiling stm32f4xx_hal_flash.c...
-compiling stm32f4xx_hal_cortex.c...
-compiling stm32f4xx_hal_tim_ex.c...
-compiling stm32f4xx_hal_dma.c...
-compiling stm32f4xx_hal_pwr_ex.c...
-compiling stm32f4xx_hal_adc.c...
-compiling stm32f4xx_hal_adc_ex.c...
-compiling stm32f4xx_hal_uart.c...
-assembling startup_stm32f407xx.s...
-compiling system_stm32f4xx.c...
-compiling stm32f4xx_hal_msp.c...
-compiling main.c...
-../Src/main.c(146): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(194): error:  #65: expected a ";"
-../Src/main.c(215): warning:  #12-D: parsing restarts here after previous syntax error
-../Src/main.c(216): warning:  #111-D: statement is unreachable
-../Src/main.c(216): error:  #20: identifier "RCC_OscInitStruct" is undefined
-../Src/main.c(223): error:  #20: identifier "RCC_ClkInitStruct" is undefined
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-compiling stm32f4xx_it.c...
-compiling gpio.c...
-compiling adc.c...
-compiling tim.c...
-compiling usart.c...
-"ambienteControlado\ambienteControlado.axf" - 3 Errors, 4 Warning(s).
-Target not created
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(146): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(81): warning: C4017W: temperatura may be used before being set
-linking...
-Program Size: Code=15248 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 3 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(146): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(81): warning: C4017W: temperatura may be used before being set
-linking...
-Program Size: Code=15248 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 3 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(146): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(81): warning: C4017W: temperatura may be used before being set
-linking...
-Program Size: Code=15248 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 3 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(155): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(81): warning: C4017W: temperatura may be used before being set
-linking...
-Program Size: Code=15368 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 3 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(155): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(81): warning: C4017W: temperatura may be used before being set
-linking...
-Program Size: Code=15432 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 3 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(155): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(81): warning: C4017W: temperatura may be used before being set
-linking...
-Program Size: Code=15428 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 3 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(155): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(81): warning: C4017W: temperatura may be used before being set
-linking...
-Program Size: Code=15428 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 3 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-linking...
-Program Size: Code=15428 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 0 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(155): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(81): warning: C4017W: temperatura may be used before being set
-linking...
-Program Size: Code=15428 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 3 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(145): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(81): warning: C4017W: temperatura may be used before being set
-linking...
-Program Size: Code=15464 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 3 Warning(s).
-Load "ambienteControlado\\ambienteControlado.axf" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'ambienteControlado'
-compiling main.c...
-../Src/main.c(145): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-../Src/main.c(81): warning:  #177-D: variable "temperaturaAn" was declared but never referenced
-../Src/main.c(81): warning: C4017W: temperatura may be used before being set
-linking...
-Program Size: Code=15468 RO-data=456 RW-data=28 ZI-data=1292  
-"ambienteControlado\ambienteControlado.axf" - 0 Errors, 3 Warning(s).
+Program Size: Code=14548 RO-data=456 RW-data=28 ZI-data=1292  
+"ambienteControlado\ambienteControlado.axf" - 0 Errors, 2 Warning(s).
 Load "ambienteControlado\\ambienteControlado.axf" 
 Erase Done.
 Programming Done.
