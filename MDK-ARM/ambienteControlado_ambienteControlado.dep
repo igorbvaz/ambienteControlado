@@ -22,7 +22,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5A3C54BA)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A3C54BA)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A863344)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5A3C54BA)
@@ -30,7 +30,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5A3C54BB)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A3C54BB)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A862085)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5A3C54BB)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c)(0x5A3C54BC)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DUSE_HAL_DRIVER -DSTM32F407xx -o ambientecontrolado\stm32f4xx_hal.o --omf_browse ambientecontrolado\stm32f4xx_hal.crf --depend ambientecontrolado\stm32f4xx_hal.d)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5A3C54BA)
@@ -55,7 +55,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5A3C54BA)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A3C54BA)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A863344)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5A3C54BA)
@@ -63,7 +63,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5A3C54BB)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A3C54BB)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A862085)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5A3C54BB)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c)(0x5A3C54BD)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DUSE_HAL_DRIVER -DSTM32F407xx -o ambientecontrolado\stm32f4xx_hal_tim.o --omf_browse ambientecontrolado\stm32f4xx_hal_tim.crf --depend ambientecontrolado\stm32f4xx_hal_tim.d)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5A3C54BA)
@@ -88,7 +88,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5A3C54BA)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A3C54BA)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A863344)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5A3C54BA)
@@ -96,7 +96,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5A3C54BB)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A3C54BB)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A862085)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5A3C54BB)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c)(0x5A3C54BC)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DUSE_HAL_DRIVER -DSTM32F407xx -o ambientecontrolado\stm32f4xx_hal_gpio.o --omf_browse ambientecontrolado\stm32f4xx_hal_gpio.crf --depend ambientecontrolado\stm32f4xx_hal_gpio.d)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5A3C54BA)
@@ -121,7 +121,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5A3C54BA)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A3C54BA)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A863344)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5A3C54BA)
@@ -129,7 +129,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5A3C54BB)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A3C54BB)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A862085)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5A3C54BB)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c)(0x5A3C54BC)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DUSE_HAL_DRIVER -DSTM32F407xx -o ambientecontrolado\stm32f4xx_hal_dma_ex.o --omf_browse ambientecontrolado\stm32f4xx_hal_dma_ex.crf --depend ambientecontrolado\stm32f4xx_hal_dma_ex.d)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5A3C54BA)
@@ -154,7 +154,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5A3C54BA)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A3C54BA)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A863344)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5A3C54BA)
@@ -162,7 +162,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5A3C54BB)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A3C54BB)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A862085)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5A3C54BB)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c)(0x5A3C54BD)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DUSE_HAL_DRIVER -DSTM32F407xx -o ambientecontrolado\stm32f4xx_hal_pwr.o --omf_browse ambientecontrolado\stm32f4xx_hal_pwr.crf --depend ambientecontrolado\stm32f4xx_hal_pwr.d)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5A3C54BA)
@@ -187,7 +187,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5A3C54BA)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A3C54BA)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A863344)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5A3C54BA)
@@ -195,7 +195,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5A3C54BB)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A3C54BB)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A862085)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5A3C54BB)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c)(0x5A3C54BD)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DUSE_HAL_DRIVER -DSTM32F407xx -o ambientecontrolado\stm32f4xx_hal_rcc_ex.o --omf_browse ambientecontrolado\stm32f4xx_hal_rcc_ex.crf --depend ambientecontrolado\stm32f4xx_hal_rcc_ex.d)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5A3C54BA)
@@ -220,7 +220,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5A3C54BA)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A3C54BA)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A863344)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5A3C54BA)
@@ -228,7 +228,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5A3C54BB)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A3C54BB)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A862085)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5A3C54BB)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c)(0x5A3C54BC)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DUSE_HAL_DRIVER -DSTM32F407xx -o ambientecontrolado\stm32f4xx_hal_flash_ramfunc.o --omf_browse ambientecontrolado\stm32f4xx_hal_flash_ramfunc.crf --depend ambientecontrolado\stm32f4xx_hal_flash_ramfunc.d)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5A3C54BA)
@@ -253,7 +253,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5A3C54BA)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A3C54BA)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A863344)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5A3C54BA)
@@ -261,7 +261,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5A3C54BB)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A3C54BB)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A862085)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5A3C54BB)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c)(0x5A3C54BD)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DUSE_HAL_DRIVER -DSTM32F407xx -o ambientecontrolado\stm32f4xx_hal_rcc.o --omf_browse ambientecontrolado\stm32f4xx_hal_rcc.crf --depend ambientecontrolado\stm32f4xx_hal_rcc.d)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5A3C54BA)
@@ -286,7 +286,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5A3C54BA)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A3C54BA)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A863344)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5A3C54BA)
@@ -294,7 +294,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5A3C54BB)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A3C54BB)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A862085)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5A3C54BB)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c)(0x5A3C54BC)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DUSE_HAL_DRIVER -DSTM32F407xx -o ambientecontrolado\stm32f4xx_hal_flash.o --omf_browse ambientecontrolado\stm32f4xx_hal_flash.crf --depend ambientecontrolado\stm32f4xx_hal_flash.d)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5A3C54BA)
@@ -319,7 +319,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5A3C54BA)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A3C54BA)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A863344)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5A3C54BA)
@@ -327,7 +327,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5A3C54BB)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A3C54BB)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A862085)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5A3C54BB)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c)(0x5A3C54BC)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DUSE_HAL_DRIVER -DSTM32F407xx -o ambientecontrolado\stm32f4xx_hal_cortex.o --omf_browse ambientecontrolado\stm32f4xx_hal_cortex.crf --depend ambientecontrolado\stm32f4xx_hal_cortex.d)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5A3C54BA)
@@ -352,7 +352,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5A3C54BA)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A3C54BA)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A863344)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5A3C54BA)
@@ -360,7 +360,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5A3C54BB)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A3C54BB)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A862085)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5A3C54BB)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c)(0x5A3C54BD)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DUSE_HAL_DRIVER -DSTM32F407xx -o ambientecontrolado\stm32f4xx_hal_tim_ex.o --omf_browse ambientecontrolado\stm32f4xx_hal_tim_ex.crf --depend ambientecontrolado\stm32f4xx_hal_tim_ex.d)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5A3C54BA)
@@ -385,7 +385,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5A3C54BA)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A3C54BA)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A863344)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5A3C54BA)
@@ -393,7 +393,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5A3C54BB)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A3C54BB)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A862085)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5A3C54BB)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c)(0x5A3C54BC)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DUSE_HAL_DRIVER -DSTM32F407xx -o ambientecontrolado\stm32f4xx_hal_dma.o --omf_browse ambientecontrolado\stm32f4xx_hal_dma.crf --depend ambientecontrolado\stm32f4xx_hal_dma.d)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5A3C54BA)
@@ -418,7 +418,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5A3C54BA)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A3C54BA)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A863344)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5A3C54BA)
@@ -426,7 +426,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5A3C54BB)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A3C54BB)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A862085)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5A3C54BB)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c)(0x5A3C54BD)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DUSE_HAL_DRIVER -DSTM32F407xx -o ambientecontrolado\stm32f4xx_hal_pwr_ex.o --omf_browse ambientecontrolado\stm32f4xx_hal_pwr_ex.crf --depend ambientecontrolado\stm32f4xx_hal_pwr_ex.d)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5A3C54BA)
@@ -451,7 +451,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5A3C54BA)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A3C54BA)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A863344)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5A3C54BA)
@@ -459,7 +459,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5A3C54BB)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A3C54BB)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A862085)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5A3C54BB)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c)(0x5A3C54BC)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DUSE_HAL_DRIVER -DSTM32F407xx -o ambientecontrolado\stm32f4xx_hal_adc.o --omf_browse ambientecontrolado\stm32f4xx_hal_adc.crf --depend ambientecontrolado\stm32f4xx_hal_adc.d)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5A3C54BA)
@@ -484,7 +484,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5A3C54BA)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A3C54BA)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A863344)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5A3C54BA)
@@ -492,7 +492,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5A3C54BB)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A3C54BB)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A862085)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5A3C54BB)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c)(0x5A3C54BC)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DUSE_HAL_DRIVER -DSTM32F407xx -o ambientecontrolado\stm32f4xx_hal_adc_ex.o --omf_browse ambientecontrolado\stm32f4xx_hal_adc_ex.crf --depend ambientecontrolado\stm32f4xx_hal_adc_ex.d)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5A3C54BA)
@@ -517,7 +517,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5A3C54BA)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A3C54BA)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A863344)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5A3C54BA)
@@ -525,7 +525,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5A3C54BB)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A3C54BB)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A862085)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5A3C54BB)
 F (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5A3C54BB)()
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c)(0x5A3C54BD)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DUSE_HAL_DRIVER -DSTM32F407xx -o ambientecontrolado\stm32f4xx_hal_uart.o --omf_browse ambientecontrolado\stm32f4xx_hal_uart.crf --depend ambientecontrolado\stm32f4xx_hal_uart.d)
@@ -551,7 +551,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5A3C54BA)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A3C54BA)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A863344)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5A3C54BA)
@@ -559,7 +559,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5A3C54BB)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A3C54BB)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A862085)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5A3C54BB)
 F (startup_stm32f407xx.s)(0x5A6A78E5)(--cpu Cortex-M4.fp --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include--list startup_stm32f407xx.lst --xref -o ambientecontrolado\startup_stm32f407xx.o --depend ambientecontrolado\startup_stm32f407xx.d)
 F (../Src/system_stm32f4xx.c)(0x5A30BD08)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DUSE_HAL_DRIVER -DSTM32F407xx -o ambientecontrolado\system_stm32f4xx.o --omf_browse ambientecontrolado\system_stm32f4xx.crf --depend ambientecontrolado\system_stm32f4xx.d)
@@ -585,7 +585,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5A3C54BA)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A3C54BA)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A863344)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5A3C54BA)
@@ -593,7 +593,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5A3C54BB)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A3C54BB)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A862085)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5A3C54BB)
 F (../Src/stm32f4xx_hal_msp.c)(0x5A7F38C4)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DUSE_HAL_DRIVER -DSTM32F407xx -o ambientecontrolado\stm32f4xx_hal_msp.o --omf_browse ambientecontrolado\stm32f4xx_hal_msp.crf --depend ambientecontrolado\stm32f4xx_hal_msp.d)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5A3C54BA)
@@ -618,7 +618,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5A3C54BA)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A3C54BA)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A863344)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5A3C54BA)
@@ -626,9 +626,9 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5A3C54BB)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A3C54BB)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A862085)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5A3C54BB)
-F (../Src/main.c)(0x5A861CA5)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DUSE_HAL_DRIVER -DSTM32F407xx -o ambientecontrolado\main.o --omf_browse ambientecontrolado\main.crf --depend ambientecontrolado\main.d)
+F (../Src/main.c)(0x5A86334D)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DUSE_HAL_DRIVER -DSTM32F407xx -o ambientecontrolado\main.o --omf_browse ambientecontrolado\main.crf --depend ambientecontrolado\main.d)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Inc\main.h)(0x5A7F38C3)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Inc\stm32f4xx_hal_conf.h)(0x5A7F38C3)
@@ -651,7 +651,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5A3C54BA)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A3C54BA)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A863344)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5A3C54BA)
@@ -659,7 +659,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5A3C54BB)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A3C54BB)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A862085)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Inc\adc.h)(0x5A7F38C3)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Inc\tim.h)(0x5A7F38C3)
@@ -689,7 +689,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5A3C54BA)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A3C54BA)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A863344)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5A3C54BA)
@@ -697,7 +697,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5A3C54BB)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A3C54BB)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A862085)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Inc\stm32f4xx_it.h)(0x5A7F38C3)
 F (../Src/gpio.c)(0x5A7F39D5)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DUSE_HAL_DRIVER -DSTM32F407xx -o ambientecontrolado\gpio.o --omf_browse ambientecontrolado\gpio.crf --depend ambientecontrolado\gpio.d)
@@ -724,7 +724,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5A3C54BA)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A3C54BA)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A863344)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5A3C54BA)
@@ -732,9 +732,9 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5A3C54BB)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A3C54BB)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A862085)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5A3C54BB)
-F (../Src/adc.c)(0x5A861CA5)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DUSE_HAL_DRIVER -DSTM32F407xx -o ambientecontrolado\adc.o --omf_browse ambientecontrolado\adc.crf --depend ambientecontrolado\adc.d)
+F (../Src/adc.c)(0x5A863596)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DUSE_HAL_DRIVER -DSTM32F407xx -o ambientecontrolado\adc.o --omf_browse ambientecontrolado\adc.crf --depend ambientecontrolado\adc.d)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Inc\adc.h)(0x5A7F38C3)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Inc\stm32f4xx_hal_conf.h)(0x5A7F38C3)
@@ -758,7 +758,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5A3C54BA)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A3C54BA)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A863344)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5A3C54BA)
@@ -766,7 +766,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5A3C54BB)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A3C54BB)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A862085)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Inc\gpio.h)(0x5A7F38C3)
 F (../Src/tim.c)(0x5A7F39D4)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DUSE_HAL_DRIVER -DSTM32F407xx -o ambientecontrolado\tim.o --omf_browse ambientecontrolado\tim.crf --depend ambientecontrolado\tim.d)
@@ -793,7 +793,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5A3C54BA)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A3C54BA)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A863344)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5A3C54BA)
@@ -801,7 +801,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5A3C54BB)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A3C54BB)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A862085)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5A3C54BB)
 F (../Src/usart.c)(0x5A7F38C4)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DUSE_HAL_DRIVER -DSTM32F407xx -o ambientecontrolado\usart.o --omf_browse ambientecontrolado\usart.crf --depend ambientecontrolado\usart.d)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Inc\usart.h)(0x5A7F38C3)
@@ -827,7 +827,7 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5A3C54BA)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A3C54BA)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5A863344)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5A3C54BA)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5A3C54BA)
@@ -835,6 +835,6 @@ I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\D
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5A3C54BB)
-I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A3C54BB)
+I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5A862085)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5A3C54BB)
 I (C:\Users\ferna\Documents\Projetos\ambienteControladoMain\ambienteControlado\Inc\gpio.h)(0x5A7F38C3)

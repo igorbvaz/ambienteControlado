@@ -78,7 +78,7 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-	int temperatura, temperaturaAn, referencia = 25, count;
+	int temperatura, referencia = 25, count;
 	bool apertado, controleAtivo;
 	apertado = false;
 	controleAtivo = false;
@@ -118,6 +118,8 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 	count = 0;
+	float paramA = 4095/(80-referencia);
+	float paramB = -paramA*referencia;
   while (1)
   {
 		//HAL_UART_Receive(&huart1, buffer, sizeof(buffer), HAL_MAX_DELAY);
@@ -141,21 +143,10 @@ int main(void)
 	*/
 		
 		if (controleAtivo) { //sistema de controle e exibição
-			if (HAL_ADC_PollForConversion(&hadc1, 5000) == HAL_OK) temperatura = HAL_ADC_GetValue(&hadc1);
-			
-			temperatura =(int)((float) temperatura * 2800/(0xFFF*13)); //int 12 bits para tensão
-			
-			if (temperatura > referencia) {
-				
-				//setPWM(htim4, TIM_CHANNEL_3, 4095/30); //teste do PWM
-				
-			} else {
-				
-				//setPWM(htim4, TIM_CHANNEL_3, 0); //teste do PWM
-			}
-			
 			if (count == 0) { //atualiza a temperatura no display a cada 30 iterações do while
-				
+				if (HAL_ADC_PollForConversion(&hadc1, 5000) == HAL_OK) temperatura = HAL_ADC_GetValue(&hadc1); 
+				temperatura =(int)((float) temperatura * 2800/(0xFFF*13)); //int 12 bits para tensão
+				setPWM(htim4, TIM_CHANNEL_3,(temperatura > referencia) ? paramA*temperatura + paramB : 0);
 				sprintf((char *)buffer, "t%d%d", referencia, temperatura);
 				HAL_UART_Transmit(&huart2, buffer, sizeof(buffer), 10);
 				if (temperatura > 99) {
@@ -168,13 +159,6 @@ int main(void)
 			}
 			count++;
 			if (count == 31) count = 0;
-			
-			//temperatura = 25;
-			//referencia = (7 + 0.713*referencia)/10;
-			//writeTo7seg((count > 1) ? temperatura : referencia, count);
-			//count++;
-			//if (count == 4) count = 0;
-			//setPWM(htim4, TIM_CHANNEL_3, 4095, count << 9); 
 		}
 		else { //Desligando
 			writeToLeftDisplays(0);
@@ -189,9 +173,7 @@ int main(void)
 
   /* USER CODE BEGIN 3 */
 
-		//HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_13);
 		HAL_Delay(50);
-		//writeToLeftDisplays(39);
   }
   /* USER CODE END 3 */
 
