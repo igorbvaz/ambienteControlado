@@ -144,17 +144,19 @@ int main(void)
 		
 		if (controleAtivo) { //sistema de controle e exibição
 			if (count == 0) { //atualiza a temperatura no display a cada 30 iterações do while
-				if (HAL_ADC_PollForConversion(&hadc1, 5000) == HAL_OK) temperatura = HAL_ADC_GetValue(&hadc1); 
-				temperatura =(int)((float) temperatura * 2800/(0xFFF*13)); //int 12 bits para tensão
-				setPWM(htim4, TIM_CHANNEL_3,(temperatura > referencia) ? paramA*temperatura + paramB : 0);
-				sprintf((char *)buffer, "t%d%d", referencia, temperatura);
-				HAL_UART_Transmit(&huart2, buffer, sizeof(buffer), 10);
-				if (temperatura > 99) {
+				if (HAL_ADC_PollForConversion(&hadc1, 5000) == HAL_OK) {
+					temperatura = HAL_ADC_GetValue(&hadc1); 
+					temperatura =(int)((float) temperatura * 2800/(0xFFF*13)); //int 12 bits para tensão
+					setPWM(htim4, TIM_CHANNEL_3,(temperatura > referencia) ? paramA*temperatura + paramB : 0);
+					sprintf((char *)buffer, "t%d%d", referencia, temperatura);
+					HAL_UART_Transmit(&huart2, buffer, sizeof(buffer), 10);
+					if (temperatura > 99) {
 					
-				writeToLeftDisplays(99);	
-				} else {
+						writeToLeftDisplays(99);	
+					} else {
 					
-				writeToLeftDisplays(temperatura);	
+					writeToLeftDisplays(temperatura);	
+					}
 				}
 			}
 			count++;
